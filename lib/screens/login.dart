@@ -9,8 +9,8 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   //initialize textfield controller
-  final usernameController = new TextEditingController();
-  final passwordController = new TextEditingController();
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
               }
 
               showDialog(context: context, builder: (BuildContext context){
-                return AlertDialog(
+                return const AlertDialog(
                   title: Text("Wrong credentials"),
                 );
               });
