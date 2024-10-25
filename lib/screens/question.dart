@@ -63,6 +63,8 @@ class _QuestionState extends State<Question> {
                               isAnswer = true;
                               selectedAnswer = index;
                             });
+
+                            
                           },
                           child: Container(
                             width: MediaQuery.of(context).size.width,
@@ -113,9 +115,9 @@ class _QuestionState extends State<Question> {
                 child: ElevatedButton(
                   onPressed: () {
                     // Navigate to the ResultPage when the button is pressed
-                    Navigator.push(
+                    Navigator.pushNamed(
                       context,
-                      MaterialPageRoute(builder: (context) => const Result()),
+                     "/result"
                     );
                   },
                   child: const Text('Finish'),

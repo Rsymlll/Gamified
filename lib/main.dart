@@ -1,5 +1,6 @@
 import 'package:example/screens/challenge_selection.dart';
 import 'package:example/screens/dashboard.dart';
+import 'package:example/screens/login.dart';
 import 'package:example/screens/question.dart';
 import 'package:example/screens/result.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        "/": (context) => const Question(),
+        //home
+        "/": (context) => const Login(),
         "/dashboard": (context) => const Dashboard(),
         "/question": (context) => const Question(),
         "/result": (context) => const Result(),

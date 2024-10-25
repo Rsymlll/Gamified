@@ -1,0 +1,70 @@
+{
+    "challenge_1": [
+        {
+            "question": "Isi Soalan sini.",
+            "answer": 0,
+            "options": [
+                "True",
+                "False"
+            ],
+            "next_node": 1
+        },
+        {
+            "question": "Isi Soalan 2 sini.",
+            "answer": 2,
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "next_node": 2
+        },
+        {
+            "question": "Isi Soalan 2 sini.",
+            "answer": 2,
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "next_node": 0
+        }
+    ],
+    "challenge_2": [
+        {
+            "question": "Isi Soalan sini.",
+            "answer": 0,
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "next_node": 1
+        },
+        {
+            "question": "Isi Soalan 2 sini.",
+            "answer": 2,
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "next_node": 2
+        },
+        {
+            "question": "Isi Soalan 2 sini.",
+            "answer": 2,
+            "options": [
+                "Option 1",
+                "Option 2",
+                "Option 3",
+                "Option 4"
+            ],
+            "next_node": 0
+        }
+    ]
+}

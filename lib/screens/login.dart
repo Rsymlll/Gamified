@@ -1,3 +1,4 @@
+import 'package:example/screens/challenge_selection.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -27,23 +28,28 @@ class _LoginState extends State<Login> {
             ),
             TextField(
               controller: passwordController,
-              
             ),
             const SizedBox(
               height: 10,
             ),
-            ElevatedButton(onPressed: () {
-              if(usernameController.text == "haziq@mail.com" && passwordController.text == "123456")
-              {
-                Navigator.pushNamed(context, "/dashboard");
-              }
-
-              showDialog(context: context, builder: (BuildContext context){
-                return const AlertDialog(
-                  title: Text("Wrong credentials"),
-                );
-              });
-            }, child: const Text("Login"))
+            ElevatedButton(
+                onPressed: () {
+                  if (usernameController.text == "haziq@mail.com" &&
+                      passwordController.text == "123456") {
+                    //Pergi ke page question
+                    Navigator.pushNamed(context, "/selection");
+                    // Navigator.push(context, MaterialPageRoute(builder: (context) => const ChallengeSelection()));
+                  } else {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return const AlertDialog(
+                            title: Text("Wrong credentials"),
+                          );
+                        });
+                  }
+                },
+                child: const Text("Login"))
           ],
         ),
       ),
