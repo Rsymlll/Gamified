@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'result.dart';
-
 class Question extends StatefulWidget {
   const Question({super.key});
 

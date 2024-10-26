@@ -1,70 +1,618 @@
 {
-    "challenge_1": [
-        {
-            "question": "Isi Soalan sini.",
-            "answer": 0,
-            "options": [
-                "True",
-                "False"
-            ],
-            "next_node": 1
-        },
-        {
-            "question": "Isi Soalan 2 sini.",
-            "answer": 2,
-            "options": [
-                "Option 1",
-                "Option 2",
-                "Option 3",
-                "Option 4"
-            ],
-            "next_node": 2
-        },
-        {
-            "question": "Isi Soalan 2 sini.",
-            "answer": 2,
-            "options": [
-                "Option 1",
-                "Option 2",
-                "Option 3",
-                "Option 4"
-            ],
-            "next_node": 0
-        }
+    "level_1": [
+      {
+        "question": "In Object-Oriented Programming, objects represent real-world entities.",
+        "answer": 0,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 1
+      },
+      {
+        "question": "Procedural programming focuses on creating objects that interact to solve a problem.",
+        "answer": 1,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 2
+      },
+      {
+        "question": "Encapsulation combines all data and methods of an object into a single unit.",
+        "answer": 0,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 3
+      },
+      {
+        "question": "A method with private access is accessible from outside the class.",
+        "answer": 1,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 4
+      },
+      {
+        "question": "A class is a blueprint from which objects are created.",
+        "answer": 0,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 5
+      },
+      {
+        "question": "Abstraction involves showing only the essential details of an object and hiding the complexity.",
+        "answer": 0,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 6
+      },
+      {
+        "question": "Polymorphism allows the same method to have different implementations in various classes.",
+        "answer": 0,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 7
+      },
+      {
+        "question": "Inheritance does not support reusability in programming.",
+        "answer": 1,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 8
+      },
+      {
+        "question": "Data hiding is a principle under encapsulation in OOP.",
+        "answer": 0,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 9
+      },
+      {
+        "question": "The state of an object refers to its behaviors.",
+        "answer": 1,
+        "options": [
+          "True",
+          "False"
+        ],
+        "next_node": 0
+      }
     ],
-    "challenge_2": [
-        {
-            "question": "Isi Soalan sini.",
+    "level_2": [
+      {
+        "question": "What is encapsulation in OOP?",
+        "answer": 1,
+        "options": [
+          "Hiding the object's complexity",
+          "Combining an object’s data and methods in one unit",
+          "Sharing attributes between objects",
+          "Allowing a function to take many forms"
+        ],
+        "next_node": 1
+      },
+      {
+        "question": "In OOP, what does abstraction primarily focus on?",
+        "answer": 1,
+        "options": [
+          "Simplifying the object design",
+          "Hiding unimportant details",
+          "Creating objects from real-world entities",
+          "Making data inaccessible"
+        ],
+        "next_node": 2
+      },
+      {
+        "question": "Which of the following best describes polymorphism?",
+        "answer": 1,
+        "options": [
+          "It is the ability of an object to change classes.",
+          "It supports defining methods with the same name but different implementations.",
+          "It ensures data hiding.",
+          "It restricts inheritance."
+        ],
+        "next_node": 3
+      },
+      {
+        "question": "Which symbol represents private access in UML diagrams?",
+        "answer": 0,
+        "options": [
+          "-",
+          "+",
+          "#",
+          "~"
+        ],
+        "next_node": 4
+      },
+      {
+        "question": "An object’s 'state' refers to:",
+        "answer": 2,
+        "options": [
+          "Its methods",
+          "Its access specifiers",
+          "Its data/fields",
+          "Its dependencies"
+        ],
+        "next_node": 5
+      },
+      {
+        "question": "Inheritance primarily supports:",
+        "answer": 1,
+        "options": [
+          "Creating new classes with unique properties only",
+          "Reusing existing class properties and methods",
+          "Restricting data access",
+          "Implementing polymorphism only"
+        ],
+        "next_node": 6
+      },
+      {
+        "question": "Which OOP principle allows data hiding?",
+        "answer": 1,
+        "options": [
+          "Abstraction",
+          "Encapsulation",
+          "Inheritance",
+          "Polymorphism"
+        ],
+        "next_node": 7
+      },
+      {
+        "question": "In OOP, an 'instance' of a class is:",
+        "answer": 0,
+        "options": [
+          "A specific object created from the class",
+          "A duplicate of the class blueprint",
+          "A function inside the class",
+          "A variable within the class"
+        ],
+        "next_node": 8
+      },
+      {
+        "question": "A class in OOP is best described as:",
+        "answer": 2,
+        "options": [
+          "A detailed object",
+          "A collection of functions",
+          "A blueprint for creating objects",
+          "A file containing code"
+        ],
+        "next_node": 9
+      },
+      {
+        "question": "What does an 'attribute' of an object represent?",
+        "answer": 0,
+        "options": [
+          "Its state",
+          "Its behavior",
+          "Its class name",
+          "Its methods"
+        ],
+        "next_node": 0
+      }
+    ],
+    "level_3": [
+      {
+        "question": "Which principle allows a class to inherit properties from another class?",
+        "answer": 1,
+        "options": [
+          "Encapsulation",
+          "Inheritance",
+          "Abstraction"
+        ],
+        "next_node": 1
+      },
+      {
+        "question": "Which characteristic of OOP ensures that only necessary details are shown?",
+        "answer": 2,
+        "options": [
+          "Polymorphism",
+          "Inheritance",
+          "Abstraction"
+        ],
+        "next_node": 2
+      },
+      {
+        "question": "What is the purpose of the 'public' access modifier in a class?",
+        "answer": 1,
+        "options": [
+          "To restrict data access",
+          "To allow data access outside the class",
+          "To encapsulate data"
+        ],
+        "next_node": 3
+      },
+      {
+        "question": "In a class diagram, the bottom section typically contains:",
+        "answer": 1,
+        "options": [
+          "Class name",
+          "Methods",
+          "Attributes"
+        ],
+        "next_node": 4
+      },
+      {
+        "question": "A bank account object with fields for account number and balance represents:",
+        "answer": 0,
+        "options": [
+          "State",
+          "Behavior",
+          "Class"
+        ],
+        "next_node": 5
+      },
+      {
+        "question": "The term used for combining data and methods is:",
+        "answer": 1,
+        "options": [
+          "Abstraction",
+          "Encapsulation",
+          "Inheritance"
+        ],
+        "next_node": 6
+      },
+      {
+        "question": "An 'attribute' in OOP refers to:",
+        "answer": 0,
+        "options": [
+          "A data field in an object",
+          "A function of an object",
+          "The object's class name"
+        ],
+        "next_node": 7
+      },
+      {
+        "question": "A private attribute in a class:",
+        "answer": 0,
+        "options": [
+          "Can only be accessed within the class",
+          "Is always accessible from other classes",
+          "Is used for inheritance"
+        ],
+        "next_node": 8
+      },
+      {
+        "question": "Which term defines the actions an object can perform?",
+        "answer": 1,
+        "options": [
+          "State",
+          "Behavior",
+          "Access level"
+        ],
+        "next_node": 9
+      },
+      {
+        "question": "OOP design helps in managing:",
+        "answer": 1,
+        "options": [
+          "Memory usage only",
+          "Complex systems",
+          "Non-programming tasks"
+        ],
+        "next_node": 0
+      },
+      {
+        "CLO1_TrueFalse": [
+          {
+            "question": "In Object-Oriented Programming, objects represent real-world entities.",
             "answer": 0,
             "options": [
-                "Option 1",
-                "Option 2",
-                "Option 3",
-                "Option 4"
+              "True",
+              "False"
             ],
             "next_node": 1
-        },
-        {
-            "question": "Isi Soalan 2 sini.",
-            "answer": 2,
+          },
+          {
+            "question": "Procedural programming focuses on creating objects that interact to solve a problem.",
+            "answer": 1,
             "options": [
-                "Option 1",
-                "Option 2",
-                "Option 3",
-                "Option 4"
+              "True",
+              "False"
             ],
             "next_node": 2
-        },
-        {
-            "question": "Isi Soalan 2 sini.",
-            "answer": 2,
+          },
+          {
+            "question": "Encapsulation combines all data and methods of an object into a single unit.",
+            "answer": 0,
             "options": [
-                "Option 1",
-                "Option 2",
-                "Option 3",
-                "Option 4"
+              "True",
+              "False"
+            ],
+            "next_node": 3
+          },
+          {
+            "question": "A method with private access is accessible from outside the class.",
+            "answer": 1,
+            "options": [
+              "True",
+              "False"
+            ],
+            "next_node": 4
+          },
+          {
+            "question": "A class is a blueprint from which objects are created.",
+            "answer": 0,
+            "options": [
+              "True",
+              "False"
+            ],
+            "next_node": 5
+          },
+          {
+            "question": "Abstraction involves showing only the essential details of an object and hiding the complexity.",
+            "answer": 0,
+            "options": [
+              "True",
+              "False"
+            ],
+            "next_node": 6
+          },
+          {
+            "question": "Polymorphism allows the same method to have different implementations in various classes.",
+            "answer": 0,
+            "options": [
+              "True",
+              "False"
+            ],
+            "next_node": 7
+          },
+          {
+            "question": "Inheritance does not support reusability in programming.",
+            "answer": 1,
+            "options": [
+              "True",
+              "False"
+            ],
+            "next_node": 8
+          },
+          {
+            "question": "Data hiding is a principle under encapsulation in OOP.",
+            "answer": 0,
+            "options": [
+              "True",
+              "False"
+            ],
+            "next_node": 9
+          },
+          {
+            "question": "The state of an object refers to its behaviors.",
+            "answer": 1,
+            "options": [
+              "True",
+              "False"
             ],
             "next_node": 0
-        }
+          }
+        ],
+        "CLO2_MultipleChoice": [
+          {
+            "question": "What is encapsulation in OOP?",
+            "answer": 1,
+            "options": [
+              "Hiding the object's complexity",
+              "Combining an object’s data and methods in one unit",
+              "Sharing attributes between objects",
+              "Allowing a function to take many forms"
+            ],
+            "next_node": 1
+          },
+          {
+            "question": "In OOP, what does abstraction primarily focus on?",
+            "answer": 1,
+            "options": [
+              "Simplifying the object design",
+              "Hiding unimportant details",
+              "Creating objects from real-world entities",
+              "Making data inaccessible"
+            ],
+            "next_node": 2
+          },
+          {
+            "question": "Which of the following best describes polymorphism?",
+            "answer": 1,
+            "options": [
+              "It is the ability of an object to change classes.",
+              "It supports defining methods with the same name but different implementations.",
+              "It ensures data hiding.",
+              "It restricts inheritance."
+            ],
+            "next_node": 3
+          },
+          {
+            "question": "Which symbol represents private access in UML diagrams?",
+            "answer": 0,
+            "options": [
+              "-",
+              "+",
+              "#",
+              "~"
+            ],
+            "next_node": 4
+          },
+          {
+            "question": "An object’s 'state' refers to:",
+            "answer": 2,
+            "options": [
+              "Its methods",
+              "Its access specifiers",
+              "Its data/fields",
+              "Its dependencies"
+            ],
+            "next_node": 5
+          },
+          {
+            "question": "Inheritance primarily supports:",
+            "answer": 1,
+            "options": [
+              "Creating new classes with unique properties only",
+              "Reusing existing class properties and methods",
+              "Restricting data access",
+              "Implementing polymorphism only"
+            ],
+            "next_node": 6
+          },
+          {
+            "question": "Which OOP principle allows data hiding?",
+            "answer": 1,
+            "options": [
+              "Abstraction",
+              "Encapsulation",
+              "Inheritance",
+              "Polymorphism"
+            ],
+            "next_node": 7
+          },
+          {
+            "question": "In OOP, an 'instance' of a class is:",
+            "answer": 0,
+            "options": [
+              "A specific object created from the class",
+              "A duplicate of the class blueprint",
+              "A function inside the class",
+              "A variable within the class"
+            ],
+            "next_node": 8
+          },
+          {
+            "question": "A class in OOP is best described as:",
+            "answer": 2,
+            "options": [
+              "A detailed object",
+              "A collection of functions",
+              "A blueprint for creating objects",
+              "A file containing code"
+            ],
+            "next_node": 9
+          },
+          {
+            "question": "What does an 'attribute' of an object represent?",
+            "answer": 0,
+            "options": [
+              "Its state",
+              "Its behavior",
+              "Its class name",
+              "Its methods"
+            ],
+            "next_node": 0
+          }
+        ],
+        "CLO3_ThreeChoice": [
+          {
+            "question": "Which principle allows a class to inherit properties from another class?",
+            "answer": 1,
+            "options": [
+              "Encapsulation",
+              "Inheritance",
+              "Abstraction"
+            ],
+            "next_node": 1
+          },
+          {
+            "question": "Which characteristic of OOP ensures that only necessary details are shown?",
+            "answer": 2,
+            "options": [
+              "Polymorphism",
+              "Inheritance",
+              "Abstraction"
+            ],
+            "next_node": 2
+          },
+          {
+            "question": "What is the purpose of the 'public' access modifier in a class?",
+            "answer": 1,
+            "options": [
+              "To restrict data access",
+              "To allow data access outside the class",
+              "To encapsulate data"
+            ],
+            "next_node": 3
+          },
+          {
+            "question": "In a class diagram, the bottom section typically contains:",
+            "answer": 1,
+            "options": [
+              "Class name",
+              "Methods",
+              "Attributes"
+            ],
+            "next_node": 4
+          },
+          {
+            "question": "A bank account object with fields for account number and balance represents:",
+            "answer": 0,
+            "options": [
+              "State",
+              "Behavior",
+              "Class"
+            ],
+            "next_node": 5
+          },
+          {
+            "question": "The term used for combining data and methods is:",
+            "answer": 1,
+            "options": [
+              "Abstraction",
+              "Encapsulation",
+              "Inheritance"
+            ],
+            "next_node": 6
+          },
+          {
+            "question": "An 'attribute' in OOP refers to:",
+            "answer": 0,
+            "options": [
+              "A data field in an object",
+              "A function of an object",
+              "The object's class name"
+            ],
+            "next_node": 7
+          },
+          {
+            "question": "A private attribute in a class:",
+            "answer": 0,
+            "options": [
+              "Can only be accessed within the class",
+              "Is always accessible from other classes",
+              "Is used for inheritance"
+            ],
+            "next_node": 8
+          },
+          {
+            "question": "Which term defines the actions an object can perform?",
+            "answer": 1,
+            "options": [
+              "State",
+              "Behavior",
+              "Access level"
+            ],
+            "next_node": 9
+          },
+          {
+            "question": "OOP design helps in managing:",
+            "answer": 1,
+            "options": [
+              "Memory usage only",
+              "Complex systems",
+              "Non-programming tasks"
+            ],
+            "next_node": 0
+          }
+        ]
+      }
+      
     ]
-}
+  }
+  

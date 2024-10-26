@@ -1,4 +1,4 @@
-import 'package:example/screens/challenge_selection.dart';
+
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
                   if (usernameController.text == "haziq@mail.com" &&
                       passwordController.text == "123456") {
                     //Pergi ke page question
-                    Navigator.pushNamed(context, "/selection");
+                    Navigator.pushNamed(context, "/dashboard");
                     // Navigator.push(context, MaterialPageRoute(builder: (context) => const ChallengeSelection()));
                   } else {
                     showDialog(

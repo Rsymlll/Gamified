@@ -12,111 +12,63 @@ class ChallengeSelection extends StatefulWidget {
   ChallengeSelectionState createState() => ChallengeSelectionState(); // Public now
 }
 
-class ChallengeSelectionState extends State<ChallengeSelection> { // No underscore
+class ChallengeSelectionState extends State<ChallengeSelection> {
+  final List<String> challenges = [
+    'Introduction to OOP',
+    'Predefined class',
+    'User -defined Class',
+    'Array of Object',
+    'Method Pass by Value & Reference',
+    'Inheritance & Polymorphism part I',
+    'Inheritance & Polymorphism part II',
+    'Inheritance & Polymorphism part III',
+    'Exception Handling',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Choose a Challenge'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            developer.log("Back button pressed", name: 'ChallengeSelection');
+            // Add back button functionality here, e.g., Navigator.pop()
+          },
+        ),
+      ),
       body: SafeArea(
         child: Container(
           padding: const EdgeInsets.all(16.0),
+          color: Colors.green.shade900, // Dark green background color
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 20),
-              const Text(
-                "Challenge: Basics",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text(
-                "Description: Solve the following...",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 24,
-                ),
-              ),
-              const SizedBox(height: 40),
-              Container(
-                width: double.infinity,
-                height: 400,
-                color: Colors.grey[300], // Background color of the code box
-                child: const Center(
-                  child: Text(
-                    "Write your code here...",
-                    style: TextStyle(color: Colors.grey, fontSize: 24),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 50),
-              GestureDetector(
-                onTap: () {
-                  developer.log("Submit tapped", name: 'ChallengeSelection');
-                },
-                child: Container(
-                  width: double.infinity,
-                  height: 100,
-                  color: Colors.green,
-                  child: const Center(
-                    child: Text(
-                      "Submit",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      developer.log("Hint tapped", name: 'ChallengeSelection');
-                    },
-                    child: Container(
-                      width: 160,
-                      height: 100,
-                      color: Colors.orange,
-                      child: const Center(
+              Expanded(
+                child: ListView.builder(
+                  itemCount: challenges.length,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.grey.shade300, // Button background color
+                          foregroundColor: Colors.black, // Button text color
+                          padding: EdgeInsets.symmetric(vertical: 20.0),
+                        ),
+                        onPressed: () {
+                          developer.log("${challenges[index]} selected", name: 'ChallengeSelection');
+                        },
                         child: Text(
-                          "Hint",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          challenges[index],
+                          style: TextStyle(fontSize: 18),
                         ),
                       ),
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      developer.log("Reference tapped", name: 'ChallengeSelection');
-                    },
-                    child: Container(
-                      width: 160,
-                      height: 100,
-                      color: Colors.blue,
-                      child: const Center(
-                        child: Text(
-                          "Reference",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                    );
+                  },
+                ),
               ),
             ],
           ),
