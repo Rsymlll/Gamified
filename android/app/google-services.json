@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "759181883855",
+    "firebase_url": "https://gamified-27647-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gamified-27647",
+    "storage_bucket": "gamified-27647.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759181883855:android:4551ebbab3631d19ef7aba",
+        "android_client_info": {
+          "package_name": "com.gamified.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS5AlhBH5iJXixjAlN5-ynzC5Ho6T1fIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

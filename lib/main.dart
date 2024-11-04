@@ -1,6 +1,8 @@
 import 'package:example/screens/challenge_selection.dart';
 import 'package:example/screens/dashboard.dart';
+import 'package:example/screens/feedback.dart';
 import 'package:example/screens/login.dart';
+import 'package:example/screens/progress.dart';
 import 'package:example/screens/question.dart';
 import 'package:example/screens/result.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +28,10 @@ class MyApp extends StatelessWidget {
         "/dashboard": (context) => const Dashboard(),
         "/question": (context) => const Question(),
         "/result": (context) => const Result(),
-        "/selection" : (context) => const ChallengeSelection()
+        "/selection" : (context) => const ChallengeSelection(),
+        "/progress" : (context) => const Progress(),
+        "/feedback": (context) => const FeedbackScreen()
+
       },
     );
   }
