@@ -1,0 +1,335 @@
+{
+    "challenges": [
+      {
+        "name": "Programming Basics",
+        "chapters": [
+          {
+            "name": "Introduction to Programming",
+            "questions": [
+              {
+                "question": "What is a variable in programming?",
+                "options": ["A storage location for data", "A mathematical operation", "A control flow statement", "A function"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "What is the purpose of a loop in programming?",
+                "options": ["To make decisions", "To repeat a block of code", "To define a function", "To input data"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "Which data type would you use to store a whole number?",
+                "options": ["String", "Boolean", "Integer", "Float"],
+                "true_answer": 3,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "What symbol is used for comments in Python?",
+                "options": ["//", "#", "<!--", "*"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "What is the correct syntax for a function in Python?",
+                "options": ["function myFunction()", "def myFunction()", "function:myFunction()", "define myFunction()"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 1
+              }
+            ]
+          },
+          {
+            "name": "Control Flow",
+            "questions": [
+              {
+                "question": "What keyword is used to start a conditional statement in Python?",
+                "options": ["for", "if", "while", "switch"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "Which loop repeats code as long as a condition is true?",
+                "options": ["for loop", "while loop", "do-while loop", "until loop"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "What is the purpose of the break statement in loops?",
+                "options": ["To end the loop", "To repeat the loop", "To define the loop", "To skip an iteration"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "Which keyword is used to skip an iteration in a loop?",
+                "options": ["break", "continue", "skip", "pass"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "What is the output of print(3 < 5)?",
+                "options": ["True", "False", "3 < 5", "An error"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 2
+              }
+            ]
+          },
+          {
+            "name": "Functions and Methods",
+            "questions": [
+              {
+                "question": "Which keyword is used to create a function in Python?",
+                "options": ["function", "def", "define", "method"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "What is the purpose of the return keyword?",
+                "options": ["To define a function", "To stop a function", "To return a value from a function", "To create a variable"],
+                "true_answer": 3,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "Which of these is a built-in function in Python?",
+                "options": ["define()", "input()", "method()", "function()"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "What is the scope of a variable defined inside a function?",
+                "options": ["Global", "Local", "Static", "Public"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "What does the 'len()' function do?",
+                "options": ["Returns the length of an object", "Returns the type of an object", "Returns the memory size", "None of the above"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 3
+              }
+            ]
+          },
+          {
+            "name": "Data Structures",
+            "questions": [
+              {
+                "question": "Which of these is a mutable data type in Python?",
+                "options": ["String", "List", "Tuple", "Integer"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "What is the result of [1, 2, 3] + [4, 5]?",
+                "options": ["[1, 2, 3, 4, 5]", "[5, 7, 8]", "Error", "[4, 5, 1, 2, 3]"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "Which method removes an item at a specific index in a list?",
+                "options": ["remove()", "del", "pop()", "discard()"],
+                "true_answer": 3,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "What is the output of 'len(['apple', 'banana', 'cherry'])'?",
+                "options": ["3", "2", "1", "0"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "Which of the following is an immutable data type in Python?",
+                "options": ["List", "Dictionary", "Set", "Tuple"],
+                "true_answer": 4,
+                "next_question": "random",
+                "difficulty_level": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Programming Basics",
+        "chapters": [
+          {
+            "name": "Introduction to Programming",
+            "questions": [
+              {
+                "question": "What is a variable in programming?",
+                "options": ["A storage location for data", "A mathematical operation", "A control flow statement", "A function"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "What is the purpose of a loop in programming?",
+                "options": ["To make decisions", "To repeat a block of code", "To define a function", "To input data"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "Which data type would you use to store a whole number?",
+                "options": ["String", "Boolean", "Integer", "Float"],
+                "true_answer": 3,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "What symbol is used for comments in Python?",
+                "options": ["//", "#", "<!--", "*"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 1
+              },
+              {
+                "question": "What is the correct syntax for a function in Python?",
+                "options": ["function myFunction()", "def myFunction()", "function:myFunction()", "define myFunction()"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 1
+              }
+            ]
+          },
+          {
+            "name": "Control Flow",
+            "questions": [
+              {
+                "question": "What keyword is used to start a conditional statement in Python?",
+                "options": ["for", "if", "while", "switch"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "Which loop repeats code as long as a condition is true?",
+                "options": ["for loop", "while loop", "do-while loop", "until loop"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "What is the purpose of the break statement in loops?",
+                "options": ["To end the loop", "To repeat the loop", "To define the loop", "To skip an iteration"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "Which keyword is used to skip an iteration in a loop?",
+                "options": ["break", "continue", "skip", "pass"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 2
+              },
+              {
+                "question": "What is the output of print(3 < 5)?",
+                "options": ["True", "False", "3 < 5", "An error"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 2
+              }
+            ]
+          },
+          {
+            "name": "Functions and Methods",
+            "questions": [
+              {
+                "question": "Which keyword is used to create a function in Python?",
+                "options": ["function", "def", "define", "method"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "What is the purpose of the return keyword?",
+                "options": ["To define a function", "To stop a function", "To return a value from a function", "To create a variable"],
+                "true_answer": 3,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "Which of these is a built-in function in Python?",
+                "options": ["define()", "input()", "method()", "function()"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "What is the scope of a variable defined inside a function?",
+                "options": ["Global", "Local", "Static", "Public"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 3
+              },
+              {
+                "question": "What does the 'len()' function do?",
+                "options": ["Returns the length of an object", "Returns the type of an object", "Returns the memory size", "None of the above"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 3
+              }
+            ]
+          },
+          {
+            "name": "Data Structures",
+            "questions": [
+              {
+                "question": "Which of these is a mutable data type in Python?",
+                "options": ["String", "List", "Tuple", "Integer"],
+                "true_answer": 2,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "What is the result of [1, 2, 3] + [4, 5]?",
+                "options": ["[1, 2, 3, 4, 5]", "[5, 7, 8]", "Error", "[4, 5, 1, 2, 3]"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "Which method removes an item at a specific index in a list?",
+                "options": ["remove()", "del", "pop()", "discard()"],
+                "true_answer": 3,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "What is the output of 'len(['apple', 'banana', 'cherry'])'?",
+                "options": ["3", "2", "1", "0"],
+                "true_answer": 1,
+                "next_question": "random",
+                "difficulty_level": 4
+              },
+              {
+                "question": "Which of the following is an immutable data type in Python?",
+                "options": ["List", "Dictionary", "Set", "Tuple"],
+                "true_answer": 4,
+                "next_question": "random",
+                "difficulty_level": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

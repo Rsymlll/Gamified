@@ -1,3 +1,4 @@
+import 'package:example/models/insert.dart';
 import 'package:example/screens/challenge_selection.dart';
 import 'package:example/screens/dashboard.dart';
 import 'package:example/screens/feedback.dart';
@@ -8,7 +9,12 @@ import 'package:example/screens/result.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  init();
   runApp(const MyApp());
+}
+
+void init()async {
+  Insert.initData();
 }
 
 class MyApp extends StatelessWidget {

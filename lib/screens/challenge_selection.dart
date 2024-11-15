@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:developer' as developer;  // Use this for logging
 
-void main() {
-  runApp(MaterialApp(home: ChallengeSelection()));
-}
 
 class ChallengeSelection extends StatefulWidget {
   const ChallengeSelection({super.key});
@@ -19,9 +16,7 @@ class ChallengeSelectionState extends State<ChallengeSelection> {
     'User -defined Class',
     'Array of Object',
     'Method Pass by Value & Reference',
-    'Inheritance & Polymorphism part I',
-    'Inheritance & Polymorphism part II',
-    'Inheritance & Polymorphism part III',
+    'Inheritance & Polymorphism',
     'Exception Handling',
   ];
 

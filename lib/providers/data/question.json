@@ -1,7 +1,8 @@
-{
+/*{
+  "Introduction_to_OOP": {
     "level_1": [
       {
-        "question": "In Object-Oriented Programming, objects represent real-world entities.",
+        "question": "Object-oriented programming is based on the concept of objects.",
         "answer": 0,
         "options": [
           "True",
@@ -10,8 +11,8 @@
         "next_node": 1
       },
       {
-        "question": "Procedural programming focuses on creating objects that interact to solve a problem.",
-        "answer": 1,
+        "question": "Encapsulation is the bundling of data and methods that operate on that data.",
+        "answer": 0,
         "options": [
           "True",
           "False"
@@ -19,7 +20,7 @@
         "next_node": 2
       },
       {
-        "question": "Encapsulation combines all data and methods of an object into a single unit.",
+        "question": "In OOP, a class is a blueprint for creating objects.",
         "answer": 0,
         "options": [
           "True",
@@ -28,8 +29,8 @@
         "next_node": 3
       },
       {
-        "question": "A method with private access is accessible from outside the class.",
-        "answer": 1,
+        "question": "Inheritance allows a new class to inherit attributes and methods from an existing class.",
+        "answer": 0,
         "options": [
           "True",
           "False"
@@ -37,7 +38,7 @@
         "next_node": 4
       },
       {
-        "question": "A class is a blueprint from which objects are created.",
+        "question": "Polymorphism means that a single function can take many forms.",
         "answer": 0,
         "options": [
           "True",
@@ -46,7 +47,7 @@
         "next_node": 5
       },
       {
-        "question": "Abstraction involves showing only the essential details of an object and hiding the complexity.",
+        "question": "A constructor is a special method used to create an instance of a class.",
         "answer": 0,
         "options": [
           "True",
@@ -55,7 +56,7 @@
         "next_node": 6
       },
       {
-        "question": "Polymorphism allows the same method to have different implementations in various classes.",
+        "question": "Method overloading is a type of polymorphism.",
         "answer": 0,
         "options": [
           "True",
@@ -64,8 +65,8 @@
         "next_node": 7
       },
       {
-        "question": "Inheritance does not support reusability in programming.",
-        "answer": 1,
+        "question": "All objects in OOP must be instantiated from a class.",
+        "answer": 0,
         "options": [
           "True",
           "False"
@@ -73,7 +74,7 @@
         "next_node": 8
       },
       {
-        "question": "Data hiding is a principle under encapsulation in OOP.",
+        "question": "An abstract class cannot be instantiated directly.",
         "answer": 0,
         "options": [
           "True",
@@ -82,8 +83,8 @@
         "next_node": 9
       },
       {
-        "question": "The state of an object refers to its behaviors.",
-        "answer": 1,
+        "question": "Static methods belong to the class rather than any specific instance.",
+        "answer": 0,
         "options": [
           "True",
           "False"
@@ -93,526 +94,2047 @@
     ],
     "level_2": [
       {
-        "question": "What is encapsulation in OOP?",
+        "question": "What is the main purpose of encapsulation?",
         "answer": 1,
         "options": [
-          "Hiding the object's complexity",
-          "Combining an object’s data and methods in one unit",
-          "Sharing attributes between objects",
-          "Allowing a function to take many forms"
+          "To restrict access to certain components",
+          "To improve performance",
+          "To enable multiple inheritances"
         ],
         "next_node": 1
       },
       {
-        "question": "In OOP, what does abstraction primarily focus on?",
-        "answer": 1,
+        "question": "Which of the following is a key principle of OOP?",
+        "answer": 2,
         "options": [
-          "Simplifying the object design",
-          "Hiding unimportant details",
-          "Creating objects from real-world entities",
-          "Making data inaccessible"
+          "Modularity",
+          "Global variables",
+          "Procedural programming"
         ],
         "next_node": 2
       },
       {
-        "question": "Which of the following best describes polymorphism?",
-        "answer": 1,
+        "question": "What keyword is used to define a class in Java?",
+        "answer": 0,
         "options": [
-          "It is the ability of an object to change classes.",
-          "It supports defining methods with the same name but different implementations.",
-          "It ensures data hiding.",
-          "It restricts inheritance."
+          "class",
+          "object",
+          "define"
         ],
         "next_node": 3
       },
       {
-        "question": "Which symbol represents private access in UML diagrams?",
-        "answer": 0,
+        "question": "What type of method is used to initialize an object?",
+        "answer": 1,
         "options": [
-          "-",
-          "+",
-          "#",
-          "~"
+          "Destructor",
+          "Constructor",
+          "Accessor"
         ],
         "next_node": 4
       },
       {
-        "question": "An object’s 'state' refers to:",
+        "question": "What does polymorphism allow in OOP?",
         "answer": 2,
         "options": [
-          "Its methods",
-          "Its access specifiers",
-          "Its data/fields",
-          "Its dependencies"
+          "Data hiding",
+          "Dynamic binding",
+          "Overloading methods"
         ],
         "next_node": 5
       },
       {
-        "question": "Inheritance primarily supports:",
+        "question": "Which of the following statements about inheritance is true?",
         "answer": 1,
         "options": [
-          "Creating new classes with unique properties only",
-          "Reusing existing class properties and methods",
-          "Restricting data access",
-          "Implementing polymorphism only"
+          "A subclass can have multiple superclasses.",
+          "A subclass can inherit methods from a superclass.",
+          "Inheritance cannot be used in OOP."
         ],
         "next_node": 6
       },
       {
-        "question": "Which OOP principle allows data hiding?",
-        "answer": 1,
+        "question": "Which term refers to a function defined in a class?",
+        "answer": 2,
         "options": [
-          "Abstraction",
-          "Encapsulation",
-          "Inheritance",
-          "Polymorphism"
+          "Variable",
+          "Object",
+          "Method"
         ],
         "next_node": 7
       },
       {
-        "question": "In OOP, an 'instance' of a class is:",
-        "answer": 0,
+        "question": "What does it mean if a class is abstract?",
+        "answer": 1,
         "options": [
-          "A specific object created from the class",
-          "A duplicate of the class blueprint",
-          "A function inside the class",
-          "A variable within the class"
+          "It cannot be instantiated.",
+          "It has no methods.",
+          "It cannot have properties."
         ],
         "next_node": 8
       },
       {
-        "question": "A class in OOP is best described as:",
-        "answer": 2,
+        "question": "Which access modifier allows access from any other class?",
+        "answer": 0,
         "options": [
-          "A detailed object",
-          "A collection of functions",
-          "A blueprint for creating objects",
-          "A file containing code"
+          "public",
+          "private",
+          "protected"
         ],
         "next_node": 9
       },
       {
-        "question": "What does an 'attribute' of an object represent?",
-        "answer": 0,
+        "question": "In OOP, what is a constructor used for?",
+        "answer": 2,
         "options": [
-          "Its state",
-          "Its behavior",
-          "Its class name",
-          "Its methods"
+          "To define methods",
+          "To initialize objects",
+          "To create variables"
         ],
         "next_node": 0
       }
     ],
     "level_3": [
       {
-        "question": "Which principle allows a class to inherit properties from another class?",
-        "answer": 1,
+        "question": "Which of the following correctly describes encapsulation?",
+        "answer": 0,
         "options": [
-          "Encapsulation",
-          "Inheritance",
-          "Abstraction"
+          "Combining data and methods in a single unit",
+          "Inheritance of methods from another class",
+          "The ability of different classes to be treated as instances of the same class",
+          "The process of overriding methods in subclasses"
         ],
         "next_node": 1
       },
       {
-        "question": "Which characteristic of OOP ensures that only necessary details are shown?",
-        "answer": 2,
+        "question": "What is an advantage of using inheritance in OOP?",
+        "answer": 1,
         "options": [
-          "Polymorphism",
-          "Inheritance",
-          "Abstraction"
+          "Improved performance",
+          "Code reusability",
+          "Simplified syntax",
+          "Less code management"
         ],
         "next_node": 2
       },
       {
-        "question": "What is the purpose of the 'public' access modifier in a class?",
-        "answer": 1,
+        "question": "Which of the following best defines polymorphism?",
+        "answer": 0,
         "options": [
-          "To restrict data access",
-          "To allow data access outside the class",
-          "To encapsulate data"
+          "The ability to process objects differently based on their data type or class",
+          "The ability to inherit properties from multiple classes",
+          "The process of hiding implementation details",
+          "The act of creating objects from a class"
         ],
         "next_node": 3
       },
       {
-        "question": "In a class diagram, the bottom section typically contains:",
+        "question": "What is the output of a program that tries to access a private variable from outside its class?",
         "answer": 1,
         "options": [
-          "Class name",
-          "Methods",
-          "Attributes"
+          "Access is granted.",
+          "A compile-time error occurs.",
+          "It returns a default value.",
+          "It shows an error at runtime."
         ],
         "next_node": 4
       },
       {
-        "question": "A bank account object with fields for account number and balance represents:",
-        "answer": 0,
+        "question": "Which of the following is NOT a characteristic of OOP?",
+        "answer": 2,
         "options": [
-          "State",
-          "Behavior",
-          "Class"
+          "Encapsulation",
+          "Inheritance",
+          "Global variables",
+          "Polymorphism"
         ],
         "next_node": 5
       },
       {
-        "question": "The term used for combining data and methods is:",
-        "answer": 1,
+        "question": "What happens when a class implements an interface?",
+        "answer": 0,
         "options": [
-          "Abstraction",
-          "Encapsulation",
-          "Inheritance"
+          "It must provide the body of all methods declared in the interface.",
+          "It inherits all methods from the interface.",
+          "It can choose to implement some methods.",
+          "It cannot have any methods."
         ],
         "next_node": 6
       },
       {
-        "question": "An 'attribute' in OOP refers to:",
-        "answer": 0,
+        "question": "What is the main focus of abstraction in OOP?",
+        "answer": 3,
         "options": [
-          "A data field in an object",
-          "A function of an object",
-          "The object's class name"
+          "To protect data from unauthorized access",
+          "To manage relationships between objects",
+          "To define the behaviors of an object",
+          "To hide complex implementation details"
         ],
         "next_node": 7
       },
       {
-        "question": "A private attribute in a class:",
-        "answer": 0,
+        "question": "Which statement about constructors is true?",
+        "answer": 2,
         "options": [
-          "Can only be accessed within the class",
-          "Is always accessible from other classes",
-          "Is used for inheritance"
+          "They can have a return type.",
+          "They cannot be overloaded.",
+          "They are called automatically when an object is created.",
+          "They can be private."
         ],
         "next_node": 8
       },
       {
-        "question": "Which term defines the actions an object can perform?",
+        "question": "In Java, how do you declare a method that cannot be overridden?",
         "answer": 1,
         "options": [
-          "State",
-          "Behavior",
-          "Access level"
+          "Use the abstract keyword",
+          "Use the final keyword",
+          "Use the static keyword",
+          "Use the synchronized keyword"
         ],
         "next_node": 9
       },
       {
-        "question": "OOP design helps in managing:",
-        "answer": 1,
+        "question": "What does the 'this' keyword refer to in a method?",
+        "answer": 0,
         "options": [
-          "Memory usage only",
-          "Complex systems",
-          "Non-programming tasks"
+          "The current object",
+          "The superclass",
+          "The method itself",
+          "The constructor"
         ],
         "next_node": 0
-      },
-      {
-        "CLO1_TrueFalse": [
-          {
-            "question": "In Object-Oriented Programming, objects represent real-world entities.",
-            "answer": 0,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 1
-          },
-          {
-            "question": "Procedural programming focuses on creating objects that interact to solve a problem.",
-            "answer": 1,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 2
-          },
-          {
-            "question": "Encapsulation combines all data and methods of an object into a single unit.",
-            "answer": 0,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 3
-          },
-          {
-            "question": "A method with private access is accessible from outside the class.",
-            "answer": 1,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 4
-          },
-          {
-            "question": "A class is a blueprint from which objects are created.",
-            "answer": 0,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 5
-          },
-          {
-            "question": "Abstraction involves showing only the essential details of an object and hiding the complexity.",
-            "answer": 0,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 6
-          },
-          {
-            "question": "Polymorphism allows the same method to have different implementations in various classes.",
-            "answer": 0,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 7
-          },
-          {
-            "question": "Inheritance does not support reusability in programming.",
-            "answer": 1,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 8
-          },
-          {
-            "question": "Data hiding is a principle under encapsulation in OOP.",
-            "answer": 0,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 9
-          },
-          {
-            "question": "The state of an object refers to its behaviors.",
-            "answer": 1,
-            "options": [
-              "True",
-              "False"
-            ],
-            "next_node": 0
-          }
-        ],
-        "CLO2_MultipleChoice": [
-          {
-            "question": "What is encapsulation in OOP?",
-            "answer": 1,
-            "options": [
-              "Hiding the object's complexity",
-              "Combining an object’s data and methods in one unit",
-              "Sharing attributes between objects",
-              "Allowing a function to take many forms"
-            ],
-            "next_node": 1
-          },
-          {
-            "question": "In OOP, what does abstraction primarily focus on?",
-            "answer": 1,
-            "options": [
-              "Simplifying the object design",
-              "Hiding unimportant details",
-              "Creating objects from real-world entities",
-              "Making data inaccessible"
-            ],
-            "next_node": 2
-          },
-          {
-            "question": "Which of the following best describes polymorphism?",
-            "answer": 1,
-            "options": [
-              "It is the ability of an object to change classes.",
-              "It supports defining methods with the same name but different implementations.",
-              "It ensures data hiding.",
-              "It restricts inheritance."
-            ],
-            "next_node": 3
-          },
-          {
-            "question": "Which symbol represents private access in UML diagrams?",
-            "answer": 0,
-            "options": [
-              "-",
-              "+",
-              "#",
-              "~"
-            ],
-            "next_node": 4
-          },
-          {
-            "question": "An object’s 'state' refers to:",
-            "answer": 2,
-            "options": [
-              "Its methods",
-              "Its access specifiers",
-              "Its data/fields",
-              "Its dependencies"
-            ],
-            "next_node": 5
-          },
-          {
-            "question": "Inheritance primarily supports:",
-            "answer": 1,
-            "options": [
-              "Creating new classes with unique properties only",
-              "Reusing existing class properties and methods",
-              "Restricting data access",
-              "Implementing polymorphism only"
-            ],
-            "next_node": 6
-          },
-          {
-            "question": "Which OOP principle allows data hiding?",
-            "answer": 1,
-            "options": [
-              "Abstraction",
-              "Encapsulation",
-              "Inheritance",
-              "Polymorphism"
-            ],
-            "next_node": 7
-          },
-          {
-            "question": "In OOP, an 'instance' of a class is:",
-            "answer": 0,
-            "options": [
-              "A specific object created from the class",
-              "A duplicate of the class blueprint",
-              "A function inside the class",
-              "A variable within the class"
-            ],
-            "next_node": 8
-          },
-          {
-            "question": "A class in OOP is best described as:",
-            "answer": 2,
-            "options": [
-              "A detailed object",
-              "A collection of functions",
-              "A blueprint for creating objects",
-              "A file containing code"
-            ],
-            "next_node": 9
-          },
-          {
-            "question": "What does an 'attribute' of an object represent?",
-            "answer": 0,
-            "options": [
-              "Its state",
-              "Its behavior",
-              "Its class name",
-              "Its methods"
-            ],
-            "next_node": 0
-          }
-        ],
-        "CLO3_ThreeChoice": [
-          {
-            "question": "Which principle allows a class to inherit properties from another class?",
-            "answer": 1,
-            "options": [
-              "Encapsulation",
-              "Inheritance",
-              "Abstraction"
-            ],
-            "next_node": 1
-          },
-          {
-            "question": "Which characteristic of OOP ensures that only necessary details are shown?",
-            "answer": 2,
-            "options": [
-              "Polymorphism",
-              "Inheritance",
-              "Abstraction"
-            ],
-            "next_node": 2
-          },
-          {
-            "question": "What is the purpose of the 'public' access modifier in a class?",
-            "answer": 1,
-            "options": [
-              "To restrict data access",
-              "To allow data access outside the class",
-              "To encapsulate data"
-            ],
-            "next_node": 3
-          },
-          {
-            "question": "In a class diagram, the bottom section typically contains:",
-            "answer": 1,
-            "options": [
-              "Class name",
-              "Methods",
-              "Attributes"
-            ],
-            "next_node": 4
-          },
-          {
-            "question": "A bank account object with fields for account number and balance represents:",
-            "answer": 0,
-            "options": [
-              "State",
-              "Behavior",
-              "Class"
-            ],
-            "next_node": 5
-          },
-          {
-            "question": "The term used for combining data and methods is:",
-            "answer": 1,
-            "options": [
-              "Abstraction",
-              "Encapsulation",
-              "Inheritance"
-            ],
-            "next_node": 6
-          },
-          {
-            "question": "An 'attribute' in OOP refers to:",
-            "answer": 0,
-            "options": [
-              "A data field in an object",
-              "A function of an object",
-              "The object's class name"
-            ],
-            "next_node": 7
-          },
-          {
-            "question": "A private attribute in a class:",
-            "answer": 0,
-            "options": [
-              "Can only be accessed within the class",
-              "Is always accessible from other classes",
-              "Is used for inheritance"
-            ],
-            "next_node": 8
-          },
-          {
-            "question": "Which term defines the actions an object can perform?",
-            "answer": 1,
-            "options": [
-              "State",
-              "Behavior",
-              "Access level"
-            ],
-            "next_node": 9
-          },
-          {
-            "question": "OOP design helps in managing:",
-            "answer": 1,
-            "options": [
-              "Memory usage only",
-              "Complex systems",
-              "Non-programming tasks"
-            ],
-            "next_node": 0
-          }
-        ]
       }
-      
     ]
-  }
+  },
+  {
+    "Predefined_Class": {
+        "level_1": [
+            {
+                "question": "Java provides predefined classes in the Java API.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 1
+            },
+            {
+                "question": "The String class is used for handling character strings in Java.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 2
+            },
+            {
+                "question": "The Math class contains methods for performing basic numeric operations.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 3
+            },
+            {
+                "question": "The System class provides access to system resources.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 4
+            },
+            {
+                "question": "The Scanner class is used for reading input from various sources.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 5
+            },
+            {
+                "question": "The Object class is the root class of all Java classes.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 6
+            },
+            {
+                "question": "The Date class is used to represent date and time in Java.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 7
+            },
+            {
+                "question": "The ArrayList class is a part of the java.util package.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 8
+            },
+            {
+                "question": "The StringBuilder class is synchronized and thread-safe.",
+                "answer": 1,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 9
+            },
+            {
+                "question": "The Collections class provides static methods for manipulating collections.",
+                "answer": 0,
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "next_node": 0
+            }
+        ],
+        "level_2": [
+            {
+                "question": "What is the return type of the length() method in the String class?",
+                "answer": 2,
+                "options": [
+                    "int",
+                    "String",
+                    "void"
+                ],
+                "next_node": 1
+            },
+            {
+                "question": "Which class is used to read input from the keyboard?",
+                "answer": 1,
+                "options": [
+                    "BufferedReader",
+                    "Scanner",
+                    "InputStream"
+                ],
+                "next_node": 2
+            },
+            {
+                "question": "What does the Math.pow() method return?",
+                "answer": 0,
+                "options": [
+                    "The result of raising a number to a power",
+                    "The square root of a number",
+                    "A random number"
+                ],
+                "next_node": 3
+            },
+            {
+                "question": "Which of the following is not a method of the String class?",
+                "answer": 1,
+                "options": [
+                    "substring()",
+                    "concat()",
+                    "join()"
+                ],
+                "next_node": 4
+            },
+            {
+                "question": "Which collection class allows duplicate elements?",
+                "answer": 0,
+                "options": [
+                    "ArrayList",
+                    "HashSet",
+                    "TreeSet"
+                ],
+                "next_node": 5
+            },
+            {
+                "question": "What does the Integer.parseInt() method do?",
+                "answer": 2,
+                "options": [
+                    "Converts an integer to a string",
+                    "Parses a string as an integer",
+                    "Returns the maximum integer value"
+                ],
+                "next_node": 6
+            },
+            {
+                "question": "Which method is used to compare two strings for equality?",
+                "answer": 1,
+                "options": [
+                    "compareTo()",
+                    "equals()",
+                    "=="
+                ],
+                "next_node": 7
+            },
+            {
+                "question": "What is the output of the expression \"Hello\".length()?",
+                "answer": 2,
+                "options": [
+                    "5",
+                    "6",
+                    "Hello"
+                ],
+                "next_node": 8
+            },
+            {
+                "question": "Which of the following classes is used for handling exceptions?",
+                "answer": 0,
+                "options": [
+                    "Exception",
+                    "Error",
+                    "Throwable"
+                ],
+                "next_node": 9
+            },
+            {
+                "question": "Which class provides a method for generating random numbers?",
+                "answer": 1,
+                "options": [
+                    "Math",
+                    "Random",
+                    "SecureRandom"
+                ],
+                "next_node": 0
+            }
+        ],
+        "level_3": [
+            {
+                "question": "What does the String.split() method return?",
+                "answer": 0,
+                "options": [
+                    "An array of strings",
+                    "A single string",
+                    "A list of characters",
+                    "A numeric value"
+                ],
+                "next_node": 1
+            },
+            {
+                "question": "What is the difference between String and StringBuilder?",
+                "answer": 1,
+                "options": [
+                    "String is mutable, while StringBuilder is immutable.",
+                    "String is immutable, while StringBuilder is mutable.",
+                    "Both are mutable.",
+                    "Both are immutable."
+                ],
+                "next_node": 2
+            },
+            {
+                "question": "Which class can be used to represent a date in Java?",
+                "answer": 0,
+                "options": [
+                    "Date",
+                    "LocalDate",
+                    "Calendar",
+                    "Time"
+                ],
+                "next_node": 3
+            },
+            {
+                "question": "What is the purpose of the Collections class?",
+                "answer": 2,
+                "options": [
+                    "To create new collection types",
+                    "To manage system resources",
+                    "To provide utility methods for collections",
+                    "To define collection interfaces"
+                ],
+                "next_node": 4
+            },
+            {
+                "question": "How can you sort an ArrayList in Java?",
+                "answer": 0,
+                "options": [
+                    "Using Collections.sort()",
+                    "Using ArrayList.sort()",
+                    "Using sort() method of Math class",
+                    "ArrayLists cannot be sorted."
+                ],
+                "next_node": 5
+            },
+            {
+                "question": "Which method can be used to remove all elements from a collection?",
+                "answer": 2,
+                "options": [
+                    "clear()",
+                    "removeAll()",
+                    "delete()",
+                    "flush()"
+                ],
+                "next_node": 6
+            },
+            {
+                "question": "What is the output of \"abc\".compareTo(\"abc\")?",
+                "answer": 1,
+                "options": [
+                    "0",
+                    "1",
+                    "-1",
+                    "Exception"
+                ],
+                "next_node": 7
+            },
+            {
+                "question": "Which class is the parent class of all exceptions?",
+                "answer": 1,
+                "options": [
+                    "Error",
+                    "Throwable",
+                    "Exception",
+                    "RuntimeException"
+                ],
+                "next_node": 8
+            },
+            {
+                "question": "What does the Random.nextInt() method return?",
+                "answer": 0,
+                "options": [
+                    "A random integer",
+                    "A random double",
+                    "A random boolean",
+                    "A random string"
+                ],
+                "next_node": 9
+            },
+            {
+                "question": "Which method would you use to convert a string to lowercase?",
+                "answer": 2,
+                "options": [
+                    "toLower()",
+                    "lower()",
+                    "toLowerCase()",
+                    "lowerCase()"
+                ],
+                "next_node": 0
+            }
+        ]
+    },
+    {
+        "User_Defined_Class": {
+            "level_1": [
+                {
+                    "question": "A user-defined class is created by a programmer to define custom behavior.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 1
+                },
+                {
+                    "question": "An object is an instance of a class.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 2
+                },
+                {
+                    "question": "A class in Java can contain fields and methods.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 3
+                },
+                {
+                    "question": "The 'new' keyword is used to create an instance of a class.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 4
+                },
+                {
+                    "question": "All classes must have a main method to be executed.",
+                    "answer": 1,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 5
+                },
+                {
+                    "question": "Constructors are used to initialize objects of a class.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 6
+                },
+                {
+                    "question": "A class can have multiple constructors.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 7
+                },
+                {
+                    "question": "The 'this' keyword refers to the current instance of a class.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 8
+                },
+                {
+                    "question": "In Java, a class can inherit from multiple classes.",
+                    "answer": 1,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 9
+                },
+                {
+                    "question": "Fields in a class are also known as attributes or properties.",
+                    "answer": 0,
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "next_node": 0
+                }
+            ],
+            "level_2": [
+                {
+                    "question": "Which of the following is used to create an object of a class?",
+                    "answer": 2,
+                    "options": [
+                        "class",
+                        "object",
+                        "new"
+                    ],
+                    "next_node": 1
+                },
+                {
+                    "question": "What does a constructor do in a class?",
+                    "answer": 1,
+                    "options": [
+                        "Creates an instance variable",
+                        "Initializes an object",
+                        "Calls a method"
+                    ],
+                    "next_node": 2
+                },
+                {
+                    "question": "Which keyword is used to inherit a class?",
+                    "answer": 0,
+                    "options": [
+                        "extends",
+                        "implements",
+                        "inherits"
+                    ],
+                    "next_node": 3
+                },
+                {
+                    "question": "What is the default return type of a constructor?",
+                    "answer": 1,
+                    "options": [
+                        "int",
+                        "No return type",
+                        "void"
+                    ],
+                    "next_node": 4
+                },
+                {
+                    "question": "Which of the following is a characteristic of a class?",
+                    "answer": 0,
+                    "options": [
+                        "Encapsulation",
+                        "Decomposition",
+                        "Polymorphism"
+                    ],
+                    "next_node": 5
+                },
+                {
+                    "question": "Which keyword represents the current instance in a class?",
+                    "answer": 2,
+                    "options": [
+                        "super",
+                        "class",
+                        "this"
+                    ],
+                    "next_node": 6
+                },
+                {
+                    "question": "Which method is automatically called when an object is created?",
+                    "answer": 0,
+                    "options": [
+                        "Constructor",
+                        "Destructor",
+                        "Initializer"
+                    ],
+                    "next_node": 7
+                },
+                {
+                    "question": "What does the 'extends' keyword indicate in Java?",
+                    "answer": 1,
+                    "options": [
+                        "Implements an interface",
+                        "Inherits a superclass",
+                        "Overrides a method"
+                    ],
+                    "next_node": 8
+                },
+                {
+                    "question": "Which access modifier allows visibility only within the same package?",
+                    "answer": 2,
+                    "options": [
+                        "private",
+                        "public",
+                        "default"
+                    ],
+                    "next_node": 9
+                },
+                {
+                    "question": "What type of class is used to create an object in Java?",
+                    "answer": 1,
+                    "options": [
+                        "Abstract class",
+                        "Concrete class",
+                        "Interface"
+                    ],
+                    "next_node": 0
+                }
+            ],
+            "level_3": [
+                {
+                    "question": "What does the 'this' keyword in Java refer to?",
+                    "answer": 0,
+                    "options": [
+                        "The current object",
+                        "A superclass",
+                        "A static method",
+                        "The class itself"
+                    ],
+                    "next_node": 1
+                },
+                {
+                    "question": "Which of the following is true about constructors?",
+                    "answer": 1,
+                    "options": [
+                        "They must have a return type.",
+                        "They have the same name as the class.",
+                        "They can be called explicitly.",
+                        "They can be static."
+                    ],
+                    "next_node": 2
+                },
+                {
+                    "question": "What is the purpose of a class's method?",
+                    "answer": 0,
+                    "options": [
+                        "To define behaviors of objects",
+                        "To store attributes",
+                        "To inherit another class",
+                        "To create classes"
+                    ],
+                    "next_node": 3
+                },
+                {
+                    "question": "Which of these describes encapsulation in Java?",
+                    "answer": 2,
+                    "options": [
+                        "Defining multiple classes",
+                        "Inheriting properties",
+                        "Restricting access to data",
+                        "Reusing code"
+                    ],
+                    "next_node": 4
+                },
+                {
+                    "question": "What is an instance variable?",
+                    "answer": 1,
+                    "options": [
+                        "A variable shared by all instances",
+                        "A variable specific to each object",
+                        "A static field",
+                        "A local method variable"
+                    ],
+                    "next_node": 5
+                },
+                {
+                    "question": "What happens if you do not provide a constructor in a class?",
+                    "answer": 0,
+                    "options": [
+                        "A default constructor is created by Java.",
+                        "An error occurs.",
+                        "The class cannot be instantiated.",
+                        "It inherits a superclass constructor."
+                    ],
+                    "next_node": 6
+                },
+                {
+                    "question": "How do you call a constructor of a superclass?",
+                    "answer": 1,
+                    "options": [
+                        "using 'this()'",
+                        "using 'super()'",
+                        "using 'constructor()'",
+                        "using 'parent()'"
+                    ],
+                    "next_node": 7
+                },
+                {
+                    "question": "Which statement is true about methods in a user-defined class?",
+                    "answer": 2,
+                    "options": [
+                        "They cannot return values.",
+                        "They must be static.",
+                        "They define object behavior.",
+                        "They are always public."
+                    ],
+                    "next_node": 8
+                },
+                {
+                    "question": "What is the use of an access modifier in a class?",
+                    "answer": 0,
+                    "options": [
+                        "To control access to fields and methods",
+                        "To declare classes",
+                        "To specify data types",
+                        "To inherit classes"
+                    ],
+                    "next_node": 9
+                },
+                {
+                    "question": "Which of these is a way to overload a method?",
+                    "answer": 1,
+                    "options": [
+                        "Changing the method name",
+                        "Changing the parameter list",
+                        "Adding 'override' keyword",
+                        "Declaring it private"
+                    ],
+                    "next_node": 0
+                }
+            ]
+        }
+    }
+    
+        {
+          "Array_of_Object": {
+              "level_1": [
+                  {
+                      "question": "An array is a collection of variables of the same type.",
+                      "answer": 0,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 1
+                  },
+                  {
+                      "question": "Objects in an array can be of different types.",
+                      "answer": 1,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 2
+                  },
+                  {
+                      "question": "The size of an array can be changed after it is created.",
+                      "answer": 1,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 3
+                  },
+                  {
+                      "question": "You can access an array element using its index.",
+                      "answer": 0,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 4
+                  },
+                  {
+                      "question": "Arrays can be multi-dimensional.",
+                      "answer": 0,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 5
+                  },
+                  {
+                      "question": "An array of objects can be created in Java.",
+                      "answer": 0,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 6
+                  },
+                  {
+                      "question": "Array indexes in Java start from 1.",
+                      "answer": 1,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 7
+                  },
+                  {
+                      "question": "You can assign a value to an array element after declaring the array.",
+                      "answer": 0,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 8
+                  },
+                  {
+                      "question": "An array can store objects of a user-defined class.",
+                      "answer": 0,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 9
+                  },
+                  {
+                      "question": "The length of an array can be accessed using a method.",
+                      "answer": 1,
+                      "options": [
+                          "True",
+                          "False"
+                      ],
+                      "next_node": 0
+                  }
+              ],
+              "level_2": [
+                  {
+                      "question": "What is the correct way to declare an array in Java?",
+                      "answer": 1,
+                      "options": [
+                          "int arr[];",
+                          "arr int[];",
+                          "array int;"
+                      ],
+                      "next_node": 1
+                  },
+                  {
+                      "question": "Which of the following can be stored in an array of objects?",
+                      "answer": 0,
+                      "options": [
+                          "Instances of a class",
+                          "Primitive types",
+                          "Strings"
+                      ],
+                      "next_node": 2
+                  },
+                  {
+                      "question": "What happens if you access an index that is out of bounds in an array?",
+                      "answer": 0,
+                      "options": [
+                          "ArrayIndexOutOfBoundsException is thrown.",
+                          "The program crashes.",
+                          "Nothing happens."
+                      ],
+                      "next_node": 3
+                  },
+                  {
+                      "question": "How can you find the number of elements in an array?",
+                      "answer": 1,
+                      "options": [
+                          "array.length()",
+                          "array.size()",
+                          "array.length"
+                      ],
+                      "next_node": 4
+                  },
+                  {
+                      "question": "How do you create an array of 10 integers?",
+                      "answer": 0,
+                      "options": [
+                          "int[] arr = new int[10];",
+                          "int arr[10];",
+                          "int arr = new int(10);"
+                      ],
+                      "next_node": 5
+                  },
+                  {
+                      "question": "Which keyword is used to initialize an array with values?",
+                      "answer": 2,
+                      "options": [
+                          "new",
+                          "init",
+                          "array"
+                      ],
+                      "next_node": 6
+                  },
+                  {
+                      "question": "What will be the output of the following code? \nint[] nums = {1, 2, 3}; \nSystem.out.println(nums[1]);",
+                      "answer": 0,
+                      "options": [
+                          "2",
+                          "1",
+                          "3"
+                      ],
+                      "next_node": 7
+                  },
+                  {
+                      "question": "Which of the following is a valid way to initialize an array?",
+                      "answer": 1,
+                      "options": [
+                          "int[] arr = new int[] {1, 2, 3};",
+                          "int arr = {1, 2, 3};",
+                          "int arr[] = new int(3);"
+                      ],
+                      "next_node": 8
+                  },
+                  {
+                      "question": "What is the default value of an uninitialized object array?",
+                      "answer": 0,
+                      "options": [
+                          "null",
+                          "0",
+                          "undefined"
+                      ],
+                      "next_node": 9
+                  },
+                  {
+                      "question": "Which of the following can be an array of objects?",
+                      "answer": 2,
+                      "options": [
+                          "int[]",
+                          "String[]",
+                          "Employee[]"
+                      ],
+                      "next_node": 0
+                  }
+              ],
+              "level_3": [
+                  {
+                      "question": "What will be the output of the following code? \nString[] names = {\"Alice\", \"Bob\", \"Charlie\"}; \nSystem.out.println(names[2]);",
+                      "answer": 1,
+                      "options": [
+                          "Alice",
+                          "Bob",
+                          "Charlie",
+                          "Error"
+                      ],
+                      "next_node": 1
+                  },
+                  {
+                      "question": "How can you create an array of 5 objects of a class named 'Car'?",
+                      "answer": 0,
+                      "options": [
+                          "Car[] cars = new Car[5];",
+                          "Car cars[] = new Car();",
+                          "Car cars = new Car(5);"
+                      ],
+                      "next_node": 2
+                  },
+                  {
+                      "question": "What will happen if you try to create an array with a negative size?",
+                      "answer": 2,
+                      "options": [
+                          "ArrayIndexOutOfBoundsException",
+                          "NegativeArraySizeException",
+                          "No exception will be thrown."
+                      ],
+                      "next_node": 3
+                  },
+                  {
+                      "question": "Which of the following will correctly set the first element of an integer array 'arr' to 10?",
+                      "answer": 1,
+                      "options": [
+                          "arr[1] = 10;",
+                          "arr[0] = 10;",
+                          "arr(0) = 10;"
+                      ],
+                      "next_node": 4
+                  },
+                  {
+                      "question": "What does the following code print? \nint[] arr = {1, 2, 3}; \nfor(int i : arr) { System.out.print(i + \" \"); }",
+                      "answer": 1,
+                      "options": [
+                          "1 2 3 ",
+                          "0 1 2 3 ",
+                          "1 2 3 4 "
+                      ],
+                      "next_node": 5
+                  },
+                  {
+                      "question": "What will be the result of this code? \nint[] arr = new int[3]; \nSystem.out.println(arr[0]);",
+                      "answer": 0,
+                      "options": [
+                          "0",
+                          "null",
+                          "undefined"
+                      ],
+                      "next_node": 6
+                  },
+                  {
+                      "question": "Which of the following statements is true regarding arrays?",
+                      "answer": 2,
+                      "options": [
+                          "An array can hold different types of data.",
+                          "An array cannot be resized.",
+                          "Arrays cannot be multidimensional."
+                      ],
+                      "next_node": 7
+                  },
+                  {
+                      "question": "What will the following code output? \nString[] fruits = {\"Apple\", \"Banana\", \"Cherry\"}; \nfor(int i = 0; i < fruits.length; i++) { System.out.println(fruits[i]); }",
+                      "answer": 1,
+                      "options": [
+                          "Error",
+                          "Apple Banana Cherry",
+                          "Banana Cherry"
+                      ],
+                      "next_node": 8
+                  },
+                  {
+                      "question": "What is the length of this array? \nint[] numbers = new int[5];",
+                      "answer": 2,
+                      "options": [
+                          "5",
+                          "4",
+                          "0"
+                      ],
+                      "next_node": 9
+                  },
+                  {
+                      "question": "Which statement correctly declares and initializes an array of 10 doubles?",
+                      "answer": 0,
+                      "options": [
+                          "double[] nums = new double[10];",
+                          "double nums[] = new double(10);",
+                          "double nums = new double[10];"
+                      ],
+                      "next_node": null
+                  }
+              ]
+          }
+          {
+            "Method_Pass_by_Value_and_Reference": {
+                "level_1": [
+                    {
+                        "question": "In Java, primitive types are passed by value.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 1
+                    },
+                    {
+                        "question": "Reference types are passed by value in Java.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 2
+                    },
+                    {
+                        "question": "When a method is called, the actual parameters are copied to the formal parameters.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 3
+                    },
+                    {
+                        "question": "Changing the value of a parameter inside a method affects the actual argument if it is a reference type.",
+                        "answer": 1,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 4
+                    },
+                    {
+                        "question": "String is a reference type in Java.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 5
+                    },
+                    {
+                        "question": "You can pass an array to a method in Java.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 6
+                    },
+                    {
+                        "question": "Objects can be modified in the method they are passed to if they are passed by reference.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 7
+                    },
+                    {
+                        "question": "Passing by value creates a new copy of the variable.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 8
+                    },
+                    {
+                        "question": "In Java, all parameters are passed by value.",
+                        "answer": 0,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 9
+                    },
+                    {
+                        "question": "Methods in Java can return multiple values.",
+                        "answer": 1,
+                        "options": [
+                            "True",
+                            "False"
+                        ],
+                        "next_node": 0
+                    }
+                ],
+                "level_2": [
+                    {
+                        "question": "What is passed when a primitive type is passed to a method?",
+                        "answer": 0,
+                        "options": [
+                            "The actual value",
+                            "The reference to the value",
+                            "An address"
+                        ],
+                        "next_node": 1
+                    },
+                    {
+                        "question": "What is passed when an object is passed to a method?",
+                        "answer": 1,
+                        "options": [
+                            "The object itself",
+                            "The reference to the object",
+                            "The object's data"
+                        ],
+                        "next_node": 2
+                    },
+                    {
+                        "question": "What happens if you modify a parameter inside a method?",
+                        "answer": 2,
+                        "options": [
+                            "It affects the actual parameter for reference types.",
+                            "It affects the actual parameter for primitive types.",
+                            "It does not affect the actual parameter."
+                        ],
+                        "next_node": 3
+                    },
+                    {
+                        "question": "Which method signature is valid for passing an array?",
+                        "answer": 0,
+                        "options": [
+                            "void myMethod(int[] arr)",
+                            "void myMethod(int arr)",
+                            "void myMethod(int arr[]);"
+                        ],
+                        "next_node": 4
+                    },
+                    {
+                        "question": "Which keyword is used to define a method in Java?",
+                        "answer": 1,
+                        "options": [
+                            "function",
+                            "void",
+                            "method"
+                        ],
+                        "next_node": 5
+                    },
+                    {
+                        "question": "What does the following code output? \nint x = 5; \nmethod(x); \nSystem.out.println(x); \nvoid method(int x) { x = 10; }",
+                        "answer": 0,
+                        "options": [
+                            "5",
+                            "10",
+                            "Error"
+                        ],
+                        "next_node": 6
+                    },
+                    {
+                        "question": "Which statement is true regarding method overloading?",
+                        "answer": 1,
+                        "options": [
+                            "It requires different return types.",
+                            "It requires different parameter lists.",
+                            "It is not allowed in Java."
+                        ],
+                        "next_node": 7
+                    },
+                    {
+                        "question": "Can a method return a reference type?",
+                        "answer": 0,
+                        "options": [
+                            "Yes",
+                            "No",
+                            "Only primitive types"
+                        ],
+                        "next_node": 8
+                    },
+                    {
+                        "question": "What will the following code print? \nString str = \"Hello\"; \nchange(str); \nSystem.out.println(str); \nvoid change(String str) { str = \"World\"; }",
+                        "answer": 0,
+                        "options": [
+                            "Hello",
+                            "World",
+                            "Error"
+                        ],
+                        "next_node": 9
+                    },
+                    {
+                        "question": "What type of parameter allows you to pass a variable number of arguments?",
+                        "answer": 2,
+                        "options": [
+                            "Array",
+                            "Object",
+                            "Varargs"
+                        ],
+                        "next_node": 0
+                    }
+                ],
+                "level_3": [
+                    {
+                        "question": "What will be the output of the following code? \nint[] arr = {1, 2, 3}; \nchange(arr); \nSystem.out.println(arr[0]); \nvoid change(int[] arr) { arr[0] = 10; }",
+                        "answer": 1,
+                        "options": [
+                            "1",
+                            "10",
+                            "3",
+                            "Error"
+                        ],
+                        "next_node": 1
+                    },
+                    {
+                        "question": "How do you define a method that accepts an array of integers?",
+                        "answer": 0,
+                        "options": [
+                            "void method(int[] nums)",
+                            "void method(int nums)",
+                            "void method(nums int[])"
+                        ],
+                        "next_node": 2
+                    },
+                    {
+                        "question": "Which of the following statements is false regarding method parameters?",
+                        "answer": 2,
+                        "options": [
+                            "Parameters can have the same name as instance variables.",
+                            "Parameters are local to the method.",
+                            "Java allows methods to have the same name but different parameters."
+                        ],
+                        "next_node": 3
+                    },
+                    {
+                        "question": "What will be the output of the following code? \nint num = 5; \nmethod(num); \nSystem.out.println(num); \nvoid method(int num) { num++; }",
+                        "answer": 0,
+                        "options": [
+                            "5",
+                            "6",
+                            "Error",
+                            "Nothing"
+                        ],
+                        "next_node": 4
+                    },
+                    {
+                        "question": "Which of the following is true about method return types?",
+                        "answer": 1,
+                        "options": [
+                            "A method can return multiple values.",
+                            "A method can return only one value.",
+                            "A method cannot return a reference."
+                        ],
+                        "next_node": 5
+                    },
+                    {
+                        "question": "What is the effect of passing an object to a method?",
+                        "answer": 2,
+                        "options": [
+                            "You cannot change the object's attributes.",
+                            "You are passing a reference to the object.",
+                            "The object is duplicated."
+                        ],
+                        "next_node": 6
+                    },
+                    {
+                        "question": "Which statement about method parameters is true?",
+                        "answer": 0,
+                        "options": [
+                            "Parameters can be of any data type.",
+                            "Only primitive types can be parameters.",
+                            "Only reference types can be parameters."
+                        ],
+                        "next_node": 7
+                    },
+                    {
+                        "question": "What will the following code output? \nString name = \"John\"; \nchangeName(name); \nSystem.out.println(name); \nvoid changeName(String name) { name = \"Doe\"; }",
+                        "answer": 1,
+                        "options": [
+                            "John",
+                            "Doe",
+                            "Error",
+                            "Nothing"
+                        ],
+                        "next_node": 8
+                    },
+                    {
+                        "question": "What will be the result of calling a method with an incorrect number of parameters?",
+                        "answer": 0,
+                        "options": [
+                            "Compile-time error",
+                            "Runtime error",
+                            "No error"
+                        ],
+                        "next_node": 9
+                    },
+                    {
+                        "question": "Which of the following describes passing by reference?",
+                        "answer": 2,
+                        "options": [
+                            "Copying the value of the variable.",
+                            "Copying the address of the variable.",
+                            "Copying the value and reference."
+                        ],
+                        "next_node": 0
+                    }
+                ]
+            }
+            {
+              "Inheritance_and_Polymorphism": {
+                  "level_1": [
+                      {
+                          "question": "Inheritance allows a class to inherit fields and methods from another class.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 1
+                      },
+                      {
+                          "question": "A subclass can override methods of its superclass.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 2
+                      },
+                      {
+                          "question": "Polymorphism allows methods to do different things based on the object it is acting upon.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 3
+                      },
+                      {
+                          "question": "A class can extend multiple classes in Java.",
+                          "answer": 1,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 4
+                      },
+                      {
+                          "question": "The keyword 'super' is used to call a superclass's constructor.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 5
+                      },
+                      {
+                          "question": "Abstract classes can be instantiated.",
+                          "answer": 1,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 6
+                      },
+                      {
+                          "question": "Interfaces can contain method implementations.",
+                          "answer": 1,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 7
+                      },
+                      {
+                          "question": "Overloading is a form of polymorphism.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 8
+                      },
+                      {
+                          "question": "A derived class can be used in place of a base class.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 9
+                      },
+                      {
+                          "question": "The 'instanceof' operator checks if an object is an instance of a specific class.",
+                          "answer": 0,
+                          "options": [
+                              "True",
+                              "False"
+                          ],
+                          "next_node": 0
+                      }
+                  ],
+                  "level_2": [
+                      {
+                          "question": "What is the term for a class that is derived from another class?",
+                          "answer": 0,
+                          "options": [
+                              "Subclass",
+                              "Superclass",
+                              "Base class"
+                          ],
+                          "next_node": 1
+                      },
+                      {
+                          "question": "What keyword is used to inherit a class?",
+                          "answer": 1,
+                          "options": [
+                              "inherit",
+                              "extends",
+                              "implements"
+                          ],
+                          "next_node": 2
+                      },
+                      {
+                          "question": "Which of the following can an interface not have?",
+                          "answer": 2,
+                          "options": [
+                              "Constants",
+                              "Abstract methods",
+                              "Concrete methods"
+                          ],
+                          "next_node": 3
+                      },
+                      {
+                          "question": "What happens when a subclass does not override a method?",
+                          "answer": 0,
+                          "options": [
+                              "It inherits the method from the superclass.",
+                              "It causes a compile-time error.",
+                              "It creates a new method."
+                          ],
+                          "next_node": 4
+                      },
+                      {
+                          "question": "What is method overriding?",
+                          "answer": 1,
+                          "options": [
+                              "Defining a new method in the subclass.",
+                              "Changing the implementation of a method inherited from the superclass.",
+                              "Creating a method with the same name and parameters in the superclass."
+                          ],
+                          "next_node": 5
+                      },
+                      {
+                          "question": "Which keyword is used to define an interface?",
+                          "answer": 0,
+                          "options": [
+                              "interface",
+                              "abstract",
+                              "class"
+                          ],
+                          "next_node": 6
+                      },
+                      {
+                          "question": "What is the primary benefit of inheritance?",
+                          "answer": 1,
+                          "options": [
+                              "Code duplication",
+                              "Code reusability",
+                              "Encapsulation"
+                          ],
+                          "next_node": 7
+                      },
+                      {
+                          "question": "Which of the following describes polymorphism?",
+                          "answer": 2,
+                          "options": [
+                              "Ability to inherit from multiple classes.",
+                              "Ability to define multiple methods with the same name.",
+                              "Ability to take many forms."
+                          ],
+                          "next_node": 8
+                      },
+                      {
+                          "question": "What is a constructor in a subclass called?",
+                          "answer": 1,
+                          "options": [
+                              "Base constructor",
+                              "Default constructor",
+                              "Superclass constructor"
+                          ],
+                          "next_node": 9
+                      },
+                      {
+                          "question": "Can a class implement multiple interfaces?",
+                          "answer": 0,
+                          "options": [
+                              "Yes",
+                              "No",
+                              "Only in certain cases."
+                          ],
+                          "next_node": 0
+                      }
+                  ],
+                  "level_3": [
+                      {
+                          "question": "What will be the output of the following code? \nclass A { void display() { System.out.println(\"A\"); } } \nclass B extends A { void display() { System.out.println(\"B\"); } } \nA obj = new B(); \nobj.display();",
+                          "answer": 1,
+                          "options": [
+                              "A",
+                              "B",
+                              "Error",
+                              "Nothing"
+                          ],
+                          "next_node": 1
+                      },
+                      {
+                          "question": "What is true about the constructor of a subclass?",
+                          "answer": 0,
+                          "options": [
+                              "It automatically calls the constructor of the superclass.",
+                              "It cannot call the superclass constructor.",
+                              "It is not inherited."
+                          ],
+                          "next_node": 2
+                      },
+                      {
+                          "question": "Which of the following is a characteristic of an abstract class?",
+                          "answer": 1,
+                          "options": [
+                              "Cannot have any methods.",
+                              "Can have both abstract and concrete methods.",
+                              "Cannot have any fields."
+                          ],
+                          "next_node": 3
+                      },
+                      {
+                          "question": "What will the following code output? \nclass Parent { void show() { System.out.println(\"Parent\"); } } \nclass Child extends Parent { void show() { System.out.println(\"Child\"); } } \nParent obj = new Child(); \nobj.show();",
+                          "answer": 0,
+                          "options": [
+                              "Parent",
+                              "Child",
+                              "Error",
+                              "Nothing"
+                          ],
+                          "next_node": 4
+                      },
+                      {
+                          "question": "Which keyword is used to prevent a method from being overridden?",
+                          "answer": 1,
+                          "options": [
+                              "final",
+                              "static",
+                              "private"
+                          ],
+                          "next_node": 5
+                      },
+                      {
+                          "question": "What happens if you declare a method in a subclass with the same name as in the superclass?",
+                          "answer": 2,
+                          "options": [
+                              "It creates a new method.",
+                              "It overrides the superclass method.",
+                              "It causes an error."
+                          ],
+                          "next_node": 6
+                      },
+                      {
+                          "question": "What will be the output of the following code? \nclass Animal { void sound() { System.out.println(\"Animal sound\"); } } \nclass Dog extends Animal { void sound() { System.out.println(\"Bark\"); } } \nAnimal myDog = new Dog(); \nmyDog.sound();",
+                          "answer": 1,
+                          "options": [
+                              "Animal sound",
+                              "Bark",
+                              "Error",
+                              "Nothing"
+                          ],
+                          "next_node": 7
+                      },
+                      {
+                          "question": "What is the relationship between a superclass and a subclass?",
+                          "answer": 0,
+                          "options": [
+                              "Is-a relationship",
+                              "Has-a relationship",
+                              "Can be unrelated"
+                          ],
+                          "next_node": 8
+                      },
+                      {
+                          "question": "What is the output of this code? \nclass X { void display() { System.out.println(\"X\"); } } \nclass Y extends X { void display() { System.out.println(\"Y\"); } } \nY obj = new Y(); \nX ref = obj; \nref.display();",
+                          "answer": 2,
+                          "options": [
+                              "X",
+                              "Y",
+                              "Error"
+                          ],
+                          "next_node": 9
+                      },
+                      {
+                          "question": "Which of the following is an example of polymorphism?",
+                          "answer": 0,
+                          "options": [
+                              "Method overloading",
+                              "Method overriding",
+                              "Both of the above"
+                          ],
+                          "next_node": 0
+                      }
+                  ]
+              }
+              {
+                "Exception_Handling": {
+                    "level_1": [
+                        {
+                            "question": "An exception is an event that disrupts the normal flow of a program.",
+                            "answer": 0,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 1
+                        },
+                        {
+                            "question": "All exceptions are checked exceptions.",
+                            "answer": 1,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 2
+                        },
+                        {
+                            "question": "You can catch multiple exceptions with a single catch block.",
+                            "answer": 0,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 3
+                        },
+                        {
+                            "question": "The finally block is executed only if an exception is thrown.",
+                            "answer": 1,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 4
+                        },
+                        {
+                            "question": "A runtime exception is an example of a checked exception.",
+                            "answer": 1,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 5
+                        },
+                        {
+                            "question": "Throwing an exception terminates the program.",
+                            "answer": 1,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 6
+                        },
+                        {
+                            "question": "You can create your own exception classes by extending Exception class.",
+                            "answer": 0,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 7
+                        },
+                        {
+                            "question": "The try block can contain multiple catch blocks.",
+                            "answer": 0,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 8
+                        },
+                        {
+                            "question": "Java provides built-in support for handling exceptions.",
+                            "answer": 0,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 9
+                        },
+                        {
+                            "question": "A checked exception must be declared in the method signature.",
+                            "answer": 0,
+                            "options": [
+                                "True",
+                                "False"
+                            ],
+                            "next_node": 0
+                        }
+                    ],
+                    "level_2": [
+                        {
+                            "question": "What keyword is used to handle exceptions?",
+                            "answer": 1,
+                            "options": [
+                                "catch",
+                                "handle",
+                                "throw"
+                            ],
+                            "next_node": 1
+                        },
+                        {
+                            "question": "Which block is executed when an exception is caught?",
+                            "answer": 0,
+                            "options": [
+                                "catch",
+                                "finally",
+                                "try"
+                            ],
+                            "next_node": 2
+                        },
+                        {
+                            "question": "Which of the following is a checked exception?",
+                            "answer": 2,
+                            "options": [
+                                "NullPointerException",
+                                "IOException",
+                                "ArithmeticException"
+                            ],
+                            "next_node": 3
+                        },
+                        {
+                            "question": "What is the purpose of the finally block?",
+                            "answer": 1,
+                            "options": [
+                                "To throw an exception",
+                                "To execute code after try/catch blocks",
+                                "To catch exceptions"
+                            ],
+                            "next_node": 4
+                        },
+                        {
+                            "question": "What happens if an exception is not caught?",
+                            "answer": 0,
+                            "options": [
+                                "The program terminates.",
+                                "The program continues to run.",
+                                "The exception is ignored."
+                            ],
+                            "next_node": 5
+                        },
+                        {
+                            "question": "What keyword is used to explicitly throw an exception?",
+                            "answer": 1,
+                            "options": [
+                                "throw",
+                                "catch",
+                                "finally"
+                            ],
+                            "next_node": 6
+                        },
+                        {
+                            "question": "Which of the following allows you to handle multiple exceptions?",
+                            "answer": 0,
+                            "options": [
+                                "Multi-catch",
+                                "Single catch",
+                                "Finally block"
+                            ],
+                            "next_node": 7
+                        },
+                        {
+                            "question": "Which exception is thrown when an array is accessed with an illegal index?",
+                            "answer": 2,
+                            "options": [
+                                "NullPointerException",
+                                "ArrayIndexOutOfBoundsException",
+                                "ClassCastException"
+                            ],
+                            "next_node": 8
+                        },
+                        {
+                            "question": "Can you nest try-catch blocks?",
+                            "answer": 0,
+                            "options": [
+                                "Yes",
+                                "No",
+                                "Only in certain cases."
+                            ],
+                            "next_node": 9
+                        },
+                        {
+                            "question": "What does the printStackTrace() method do?",
+                            "answer": 0,
+                            "options": [
+                                "Prints the exception stack trace.",
+                                "Terminates the program.",
+                                "Throws a new exception."
+                            ],
+                            "next_node": 0
+                        }
+                    ],
+                    "level_3": [
+                        {
+                            "question": "What will be the output of the following code? \ntry { throw new Exception(\"Error\"); } catch (Exception e) { System.out.println(e.getMessage()); }",
+                            "answer": 1,
+                            "options": [
+                                "Error",
+                                "Null",
+                                "Exception"
+                            ],
+                            "next_node": 1
+                        },
+                        {
+                            "question": "Which of the following statements is true about unchecked exceptions?",
+                            "answer": 0,
+                            "options": [
+                                "They do not need to be declared in a method's throws clause.",
+                                "They must be handled.",
+                                "They are checked at compile-time."
+                            ],
+                            "next_node": 2
+                        },
+                        {
+                            "question": "What is the output of the following code? \ntry { int a = 5 / 0; } catch (ArithmeticException e) { System.out.println(\"Arithmetic Error\"); }",
+                            "answer": 2,
+                            "options": [
+                                "5",
+                                "0",
+                                "Arithmetic Error"
+                            ],
+                            "next_node": 3
+                        },
+                        {
+                            "question": "What will happen if you throw an exception from the main method?",
+                            "answer": 1,
+                            "options": [
+                                "The program will terminate.",
+                                "The exception will be caught.",
+                                "Nothing will happen."
+                            ],
+                            "next_node": 4
+                        },
+                        {
+                            "question": "Which of the following is used to create a custom exception?",
+                            "answer": 0,
+                            "options": [
+                                "Extending Exception class",
+                                "Extending RuntimeException class",
+                                "Using throw keyword"
+                            ],
+                            "next_node": 5
+                        },
+                        {
+                            "question": "What will the following code output? \ntry { throw new NullPointerException(); } catch (Exception e) { System.out.println(\"Caught Exception\"); }",
+                            "answer": 1,
+                            "options": [
+                                "Caught NullPointerException",
+                                "Caught Exception",
+                                "Nothing"
+                            ],
+                            "next_node": 6
+                        },
+                        {
+                            "question": "What is true about the 'throws' keyword?",
+                            "answer": 2,
+                            "options": [
+                                "Used to declare checked exceptions.",
+                                "Used to handle exceptions.",
+                                "Used to throw unchecked exceptions."
+                            ],
+                            "next_node": 7
+                        },
+                        {
+                            "question": "What will the following code output? \ntry { int[] arr = new int[5]; arr[10] = 0; } catch (ArrayIndexOutOfBoundsException e) { System.out.println(\"Array Error\"); }",
+                            "answer": 0,
+                            "options": [
+                                "Array Error",
+                                "0",
+                                "Exception"
+                            ],
+                            "next_node": 8
+                        },
+                        {
+                            "question": "Which of the following statements is true?",
+                            "answer": 1,
+                            "options": [
+                                "Finally block executes only if an exception is caught.",
+                                "Finally block executes regardless of whether an exception is caught.",
+                                "Finally block is not necessary."
+                            ],
+                            "next_node": 9
+                        },
+                        {
+                            "question": "What does 'try-with-resources' do?",
+                            "answer": 0,
+                            "options": [
+                                "Automatically closes resources.",
+                                "Catches multiple exceptions.",
+                                "Throws unchecked exceptions."
+                            ],
+                            "next_node": 0
+                        }
+                    ]
+                }
+            }*/
+            
+          
+        
+      
+    
+  
   
