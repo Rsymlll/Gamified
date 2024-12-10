@@ -18,14 +18,7 @@ class Challenge {
       SnapshotOptions? options) {
     final data = snapshot.data();
 
-    return Challenge(
-      id: snapshot.id,
-      name: data?['name'] as String? ?? '',
-      chapters: (data?['chapters'] as List<dynamic>?)
-              ?.map((item) => Chapter.fromJson(item))
-              .toList() ??
-          [],
-    );
+    return Challenge.fromJson(data ?? {});  // Reuse the fromJson constructor
   }
 
   /// Factory constructor to create a `Challenge` object from JSON.
@@ -36,7 +29,7 @@ class Challenge {
       chapters: (json['chapters'] as List<dynamic>?)
               ?.map((item) => Chapter.fromJson(item))
               .toList() ??
-          [],
+          [],  // Default to an empty list if chapters are missing
     );
   }
 }

@@ -31,12 +31,12 @@ class MyApp extends StatelessWidget {
       routes: {
         //home
         "/": (context) => const Login(),
-        "/dashboard": (context) => const Dashboard(),
+        "/dashboard": (context) => const Dashboard(userName: '',),
         "/question": (context) => const Question(),
         "/result": (context) => const Result(),
         "/selection" : (context) => const ChallengeSelection(),
         "/progress" : (context) => const Progress(),
-        "/feedback": (context) => const FeedbackScreen()
+        "/feedback": (context) => FeedbackScreen()
 
       },
     );

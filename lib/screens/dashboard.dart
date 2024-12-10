@@ -1,8 +1,10 @@
-import 'package:example/screens/challenge_selection.dart';
 import 'package:flutter/material.dart';
+import 'challenge_selection.dart';
 
 class Dashboard extends StatefulWidget {
-  const Dashboard({super.key});
+  final String userName; // Accepts username as a parameter
+
+  const Dashboard({super.key, required this.userName});
 
   @override
   State<Dashboard> createState() => _DashboardState();
@@ -17,9 +19,9 @@ class _DashboardState extends State<Dashboard> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Welcome, [User Name]',
-              style: TextStyle(
+            Text(
+              'Welcome, ${widget.userName}',
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -28,76 +30,59 @@ class _DashboardState extends State<Dashboard> {
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
-                // Navigate to the next page
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ChallengeSelection(), // Replace with your actual page
+                    builder: (context) => const ChallengeSelection(),
                   ),
                 );
               },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green[400],
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 15,
-                ),
-                textStyle: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              style: _buttonStyle(),
               child: const Text('Start Challenge (Java)'),
             ),
             const SizedBox(height: 15),
             ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green[400],
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 15,
-                ),
-                textStyle: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              onPressed: () {
+                Navigator.pushNamed(context, "/progress"); // Placeholder route
+              },
+              style: _buttonStyle(),
               child: const Text('View Progress'),
             ),
             const SizedBox(height: 15),
             ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green[400],
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 15, ),
-                textStyle: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              onPressed: () {
+                Navigator.pushNamed(context, "/feedback"); // Placeholder route
+              },
+              style: _buttonStyle(),
               child: const Text('Provide Feedback'),
             ),
-            const SizedBox( height: 15),
+            const SizedBox(height: 15),
             ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green[400],
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 40,
-                  vertical: 15,
-                ),
-                textStyle: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              onPressed: () {
+                Navigator.pushNamed(context, "/notes"); // Placeholder route
+              },
+              style: _buttonStyle(),
               child: const Text('Java Notes'),
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  ButtonStyle _buttonStyle() {
+    return ElevatedButton.styleFrom(
+      backgroundColor: Colors.green[400],
+      padding: const EdgeInsets.symmetric(
+        horizontal: 40,
+        vertical: 15,
+      ),
+      textStyle: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8), // Rounded corners
       ),
     );
   }

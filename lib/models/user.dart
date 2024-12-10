@@ -4,14 +4,15 @@ class User {
   String? id;
   int record;
   String name;
-  String username;
+  String userName;  // Named required parameter
   String password;
 
+  // Constructor with required 'userName'
   User({
     this.id,
     required this.record,
     required this.name,
-    required this.username,
+    required this.userName,  // Make sure to pass userName when creating a User
     required this.password,
   });
 
@@ -25,7 +26,7 @@ class User {
       id: snapshot.id,
       record: data?['record'] as int? ?? 0,
       name: data?['name'] as String? ?? '',
-      username: data?['username'] as String? ?? '',
+      userName: data?['username'] as String? ?? '',  // Ensure 'userName' is fetched
       password: data?['password'] as String? ?? '',
     );
   }

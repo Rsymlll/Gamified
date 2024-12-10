@@ -18,14 +18,7 @@ class Chapter {
       SnapshotOptions? options) {
     final data = snapshot.data();
 
-    return Chapter(
-      id: snapshot.id,
-      name: data?['name'] as String? ?? '',
-      questions: (data?['questions'] as List<dynamic>?)
-              ?.map((item) => Question.fromJson(item))
-              .toList() ??
-          [],
-    );
+    return Chapter.fromJson(data ?? {});  // Reusing the fromJson constructor
   }
 
   /// Factory constructor to create a `Chapter` object from JSON.
@@ -36,7 +29,7 @@ class Chapter {
       questions: (json['questions'] as List<dynamic>?)
               ?.map((item) => Question.fromJson(item))
               .toList() ??
-          [],
+          [],  // Empty list if no questions are found
     );
   }
 }

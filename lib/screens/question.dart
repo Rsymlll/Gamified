@@ -9,38 +9,37 @@ class Question extends StatefulWidget {
 
 class _QuestionState extends State<Question> {
   final List<String> options = ['True', 'False'];
-
   final String question =
       'Object-Oriented Programming (OOP) is more natural because software objects can represent real-world objects.';
-
-  // State to track if the question has been answered
-  bool isAnswer = false;
-
-  // Correct answer index
-  int answer = 1; // Assuming 'False' is the correct answer
-  int selectedAnswer = 0;
+  bool isAnswered = false;
+  int correctAnswer = 1; // Correct answer index
+  int selectedAnswer = -1;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Question Page'),
+        title: const Text('Question Page'),
       ),
       body: SafeArea(
         child: Stack(
           children: [
             Container(
-              decoration: BoxDecoration(color: Colors.green[100]),
               padding: const EdgeInsets.all(16),
+              color: Colors.green[100],
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const Text("C1 Level 1"),
+                  const Text(
+                    "C1 Level 1",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
                   const SizedBox(height: 28),
                   Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       color: Colors.green[50],
-                      borderRadius: const BorderRadius.all(Radius.circular(12)),
+                      borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
                       question,
@@ -49,56 +48,45 @@ class _QuestionState extends State<Question> {
                     ),
                   ),
                   const SizedBox(height: 18),
-
-                  // Generate list of answer options
                   Column(
                     children: List.generate(options.length, (index) {
-                      // If the question hasn't been answered
-                      if (!isAnswer) {
-                        return GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              isAnswer = true;
-                              selectedAnswer = index;
-                            });
-
-                            
-                          },
-                          child: Container(
-                            width: MediaQuery.of(context).size.width,
-                            padding: const EdgeInsets.all(8),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.black38,
+                      return GestureDetector(
+                        onTap: !isAnswered
+                            ? () {
+                                setState(() {
+                                  selectedAnswer = index;
+                                  isAnswered = true;
+                                });
+                              }
+                            : null,
+                        child: Container(
+                          width: double.infinity,
+                          margin: const EdgeInsets.symmetric(vertical: 8),
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: isAnswered
+                                ? (index == correctAnswer
+                                    ? Colors.green
+                                    : index == selectedAnswer
+                                        ? Colors.red
+                                        : Colors.white)
+                                : Colors.white,
+                            border: Border.all(color: Colors.black38),
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                options[index],
+                                style: const TextStyle(fontSize: 16),
                               ),
-                              borderRadius: const BorderRadius.all(Radius.circular(12)),
-                            ),
-                            child: Text(
-                              options[index],
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(fontSize: 14),
-                            ),
+                              if (isAnswered && index == correctAnswer)
+                                const Icon(Icons.check, color: Colors.white),
+                              if (isAnswered && index == selectedAnswer && index != correctAnswer)
+                                const Icon(Icons.close, color: Colors.white),
+                            ],
                           ),
-                        );
-                      }
-
-                      // If the question has been answered
-                      return Container(
-                        width: MediaQuery.of(context).size.width,
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: index == answer && selectedAnswer == answer
-                              ? Colors.green
-                              : Colors.red,
-                          border: Border.all(
-                            color: Colors.black38,
-                          ),
-                          borderRadius: const BorderRadius.all(Radius.circular(12)),
-                        ),
-                        child: Text(
-                          options[index],
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(fontSize: 14),
                         ),
                       );
                     }),
@@ -111,13 +99,11 @@ class _QuestionState extends State<Question> {
               child: Container(
                 margin: const EdgeInsets.all(16),
                 child: ElevatedButton(
-                  onPressed: () {
-                    // Navigate to the ResultPage when the button is pressed
-                    Navigator.pushNamed(
-                      context,
-                     "/result"
-                    );
-                  },
+                  onPressed: isAnswered
+                      ? () {
+                          Navigator.pushNamed(context, "/result");
+                        }
+                      : null,
                   child: const Text('Finish'),
                 ),
               ),

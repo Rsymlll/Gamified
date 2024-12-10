@@ -1,31 +1,21 @@
 import 'package:flutter/material.dart';
 
-
-class Feedback extends StatelessWidget {
-  const Feedback({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: FeedbackScreen(),
-    );
-  }
-}
-
 class FeedbackScreen extends StatelessWidget {
-  const FeedbackScreen({super.key}); // Added key parameter
+  final TextEditingController feedbackController = TextEditingController();
+
+  FeedbackScreen({super.key}); // Added key parameter
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF003300), // Dark green background color
+      backgroundColor: const Color(0xFF003300), // Dark green background color
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
-            // Add your back button functionality here
+            Navigator.pop(context); // Navigate back to the previous screen
           },
         ),
       ),
@@ -34,37 +24,68 @@ class FeedbackScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Provide Feedback',
               style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
+                color: Colors.white,
+                fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              color: Color(0xFFE0E0E0), // Light grey background color
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              decoration: BoxDecoration(
+                color: const Color(0xFFE0E0E0), // Light grey background color
+                borderRadius: BorderRadius.circular(12), // Rounded corners
+              ),
               child: TextField(
+                controller: feedbackController,
                 maxLines: 10,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: InputBorder.none,
                   hintText: 'Enter your feedback here...',
                   hintStyle: TextStyle(color: Colors.grey),
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add your submit button functionality here
+                if (feedbackController.text.isEmpty) {
+                  // Show an alert if the feedback is empty
+                  showDialog(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      title: const Text('Error'),
+                      content: const Text('Please enter your feedback.'),
+                      actions: [
+                        TextButton(
+                          onPressed: () => Navigator.pop(context),
+                          child: const Text('OK'),
+                        ),
+                      ],
+                    ),
+                  );
+                } else {
+                  // Handle feedback submission logic here
+                  // For example, save to a database or send to a server
+
+                  // Clear the text field and show a confirmation
+                  feedbackController.clear();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Feedback submitted successfully!')),
+                  );
+                }
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF4CAF50), // Green button color
-                padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                backgroundColor: const Color(0xFF4CAF50), // Green button color
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8), // Rounded corners for the button
+                ),
               ),
-              child: Text(
+              child: const Text(
                 'Submit Feedback',
                 style: TextStyle(color: Colors.white),
               ),

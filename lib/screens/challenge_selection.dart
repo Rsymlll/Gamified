@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'dart:developer' as developer;  // Use this for logging
-
+import 'dart:developer' as developer; // Use this for logging
 
 class ChallengeSelection extends StatefulWidget {
   const ChallengeSelection({super.key});
 
   @override
-  ChallengeSelectionState createState() => ChallengeSelectionState(); // Public now
+  ChallengeSelectionState createState() => ChallengeSelectionState();
 }
 
 class ChallengeSelectionState extends State<ChallengeSelection> {
   final List<String> challenges = [
     'Introduction to OOP',
-    'Predefined class',
-    'User -defined Class',
-    'Array of Object',
+    'Predefined Class',
+    'User-defined Class',
+    'Array of Objects',
     'Method Pass by Value & Reference',
     'Inheritance & Polymorphism',
     'Exception Handling',
@@ -24,12 +23,13 @@ class ChallengeSelectionState extends State<ChallengeSelection> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Choose a Challenge'),
+        title: const Text('Choose a Challenge'),
+        backgroundColor: Colors.green.shade800,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             developer.log("Back button pressed", name: 'ChallengeSelection');
-            // Add back button functionality here, e.g., Navigator.pop()
+            Navigator.pop(context); // Navigate back to the previous screen
           },
         ),
       ),
@@ -40,6 +40,15 @@ class ChallengeSelectionState extends State<ChallengeSelection> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              const Text(
+                'Select a challenge to start:',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 20),
               Expanded(
                 child: ListView.builder(
@@ -51,14 +60,23 @@ class ChallengeSelectionState extends State<ChallengeSelection> {
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.grey.shade300, // Button background color
                           foregroundColor: Colors.black, // Button text color
-                          padding: EdgeInsets.symmetric(vertical: 20.0),
+                          padding: const EdgeInsets.symmetric(vertical: 20.0),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0), // Rounded corners
+                          ),
                         ),
                         onPressed: () {
-                          developer.log("${challenges[index]} selected", name: 'ChallengeSelection');
+                          developer.log(
+                            "${challenges[index]} selected",
+                            name: 'ChallengeSelection',
+                            time: DateTime.now(),
+                          );
+                          // Navigate to a specific challenge page or display content
+                          Navigator.pushNamed(context, "/challenge", arguments: challenges[index]);
                         },
                         child: Text(
                           challenges[index],
-                          style: TextStyle(fontSize: 18),
+                          style: const TextStyle(fontSize: 18),
                         ),
                       ),
                     );
